@@ -31,9 +31,9 @@ body {
     background-color: var(--blanco);
 }
 
-/* -------------- */
-/* --- HEADER --- */
-/* -------------- */
+/* ---------------------- */
+/* --- INDEX / HEADER --- */
+/* ---------------------- */
 
 header {
     display: flex;
@@ -76,9 +76,9 @@ header nav {
     border-color: var(--blanco);
 }
 
-/* ------------ */
-/* --- MAIN --- */
-/* ------------ */
+/* -------------------- */
+/* --- INDEX - MAIN --- */
+/* -------------------- */
 
 main {
     margin: 40px;
@@ -250,4 +250,46 @@ details[open] > .btn-ver-mas {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+}
+
+/* ---------------------- */
+/* --- INDEX / FOOTER --- */
+/* ---------------------- */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 60px 40px;
+    color: var(--blanco);
+    box-sizing: border-box;
+    background-color: var(--azul);
+}
+
+.footer-col a {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.footer-columnas {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
 }
