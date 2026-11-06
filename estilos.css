@@ -54,18 +54,26 @@ header nav {
     gap: 20px;
 }
 
-header a {
-    display: flex;
-    padding: 6px 34px 6px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 8.542px;
-
-    border-radius: 80px;
-    background: var(--blanco);
-
-    font-family: 'Archivo Narrow';
+/* botón sin hover */
+.boton-header {
+    display: inline-block;
+    padding: 4px 20px;
+    background-color: var(--blanco);
     color: var(--rojo);
+    border: 2px solid var(--blanco);
+    border-radius: 50px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* botón con hover */
+.boton-header:hover {
+    background-color: transparent;
+    color: var(--blanco);
+    border-color: var(--blanco);
 }
 
 /* ------------ */
@@ -117,12 +125,10 @@ main {
 
     border-radius: 30px;
     width: 290px;
-    height: 541px;
+    height: 100%;
 }
 
 .pelicula img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -130,6 +136,8 @@ main {
 /* info pelis */
 
 .info-pelicula {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 127px;
     padding: 20px;
@@ -160,7 +168,7 @@ main {
     top: 0;
     left: 0;
     width: 290px;
-    height: 431px;
+    height: 422px;
 
     display: flex;
     flex-direction: column;
@@ -180,7 +188,7 @@ main {
 .popup-pelicula p {
     color: var(--blanco);
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .pelicula:hover .popup-pelicula {
@@ -203,4 +211,43 @@ main {
 
     border-radius: 50px;
     box-sizing: border-box;
+}
+
+.btn-desplegable {
+    display: block;
+    margin: 30px auto 10px;
+    padding: 12px 36px;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    border-radius: 50px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    width: fit-content;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.desplegable-cartelera .contenido-desplegado {
+    margin-top: 30px;/
+}
+
+.desplegable-cartelera .contenedor-btn-cerrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+details[open] > .btn-ver-mas {
+    display: none;
+}
+
+.contenedor-btn-cerrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
