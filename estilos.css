@@ -72,12 +72,20 @@ header a {
 /* --- MAIN --- */
 /* ------------ */
 
+main {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* TITULARES */
 .titulares {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    margin: 20px 0;
 }
 
 .titulares h2 {
@@ -97,14 +105,19 @@ header a {
 .peliculas {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+    gap: 30px;
+    max-width: 1570px;
 }
 
 .pelicula {
+    display: flex;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
+
     border-radius: 30px;
-    aspect-ratio: 2 / 3;
+    width: 290px;
+    height: 541px;
 }
 
 .pelicula img {
@@ -117,11 +130,9 @@ header a {
 /* info pelis */
 
 .info-pelicula {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    padding: 30px;
+    height: 127px;
+    padding: 20px;
     box-sizing: border-box;
 
     background-color: var(--negro);
@@ -131,9 +142,9 @@ header a {
 
 .info-pelicula h3 {
     font-family: 'Archivo', sans-serif;
-    font-size: 27px;
+    font-size: 22px;
     margin: 0;
-    line-height: 33px;
+    line-height: 24px;
 }
 
 .info-pelicula p {
@@ -148,8 +159,8 @@ header a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 290px;
+    height: 431px;
 
     display: flex;
     flex-direction: column;
