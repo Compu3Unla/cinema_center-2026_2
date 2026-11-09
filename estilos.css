@@ -242,7 +242,7 @@ main {
     margin-bottom: 40px;
 }
 
-details[open] > .btn-ver-mas {
+details[open]>.btn-ver-mas {
     display: none;
 }
 
@@ -294,7 +294,201 @@ footer {
     gap: 16px;
 }
 
-/* ---------------------------- */
-/* --- DESCRIPCIÓN PELICULA --- */
-/* ---------------------------- */
+/* -------------------------------------- */
+/* --- DESCRIPCIÓN PELICULA EMERGENTE --- */
+/* -------------------------------------- */
 
+/* EL MODAL EN SÍ */
+.modal-pelicula {
+    width: 90vw;
+    max-width: 1300px;
+    max-height: 90vh;
+
+    border: none;
+    background-color: var(--blanco);
+    padding: 60px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* EL FONDO OSCURO DETRÁS DEL MODAL */
+.modal-pelicula::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+/* BOTÓN CERRAR */
+.btn-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--rojo);
+    /* Rojo de tu diseño */
+}
+
+/* LAYOUT SUPERIOR (Foto y textos) */
+.modal-superior {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+.modal-poster img {
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.modal-datos {
+    gap: 30px;
+}
+
+.modal-datos h2 {
+    color: var(--rojo);
+    font-size: 80px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.ficha-tecnica {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.ficha-tecnica li {
+    margin-bottom: 10px;
+}
+
+.sinopsis {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+/* ACÁ IRÍA EL TRAILER NI IDEA
+
+.modal-trailer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-trailer img {
+    width: 100%;
+    display: block;
+}
+
+*/
+
+/* LAYOUT INFERIOR (Horarios) */
+
+.divisor {
+    border: none;
+    border-top: 1px solid #E0D5C1;
+    margin: 30px 0;
+}
+
+/* SELECTOR DE DÍAS */
+
+.selector-dias {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* OCULTAR CHECKBOXES */
+
+.check-dia,
+.check-hora {
+    display: none;
+}
+
+/* LAYOUT INFERIOR (Horarios) */
+
+/* DÍAS */
+
+.selector-dias {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-dia {
+    flex: 1;
+    padding: 10px;
+    border: 3.3px solid var(--rojo);
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.check-dia:checked+.btn-dia {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+/* HORARIOS */
+
+.fila-horas {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.btn-hora {
+    padding: 8px 16px;
+    border: 2px solid var(--rojo);
+    border-radius: 8px;
+    background-color: var(--blanco);
+    color: var(--rojo);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.check-hora:checked+.btn-hora {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+/* BOTÓN COMPRAR ENTRADAS */
+
+.btn-comprar {
+    display: block;
+    margin: 40px auto 0;
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-family: "Archivo Narrow";
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ESTO ES PARA OCULTAR CHECKBOXES */
+
+.check-dia,
+.check-hora {
+    display: none;
+}

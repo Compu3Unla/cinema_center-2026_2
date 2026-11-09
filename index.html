@@ -52,9 +52,120 @@
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>TERROR</p>
-                        <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                        <button type="button" class="btn-horarios" popovertarget="modal-resident-evil">
+                            VER HORARIOS
+                        </button>
                         <!-- acá, para no hacer 234892 html se puede hacer lo de las ventanas emergentes, pero no sé, por ahora quedará así. -->
+                    </div>
 
+                    <!-- ventana emergente -->
+                    <div id="modal-resident-evil" class="modal-pelicula" popover="auto">
+                        <div class="modal-contenedor-interno">
+
+                            <!-- Botón para cerrar la ventana -->
+                            <button class="btn-cerrar" popovertarget="modal-digger" popovertargetaction="hide">
+                                X
+                            </button>
+
+                            <!-- info. película -->
+                            <section class="modal-superior">
+                                <div class="modal-poster">
+                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg" alt="Resident Evil" width="600" height="900">
+                                </div>
+
+                                <div class="modal-datos">
+                                    <h2>RESIDENT EVIL</h2>
+                                    <p class="sinopsis">Película basada en la saga de videojuegos de Capcom del mismo nombre. En una reinvención totalmente nueva, el mensajero médico Bryan (Austin Abrams) se ve inmerso en una carrera de acción sin descanso por la supervivencia, mientras el caos se desata a su alrededor.
+                                    </p>
+
+                                    <ul class="ficha-tecnica">
+                                        <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                        <li><strong>DURACIÓN:</strong> 128 min.</li>
+                                        <li><strong>GÉNERO:</strong> COMEDIA - DRAMA</li>
+                                        <li><strong>DIRECTOR:</strong> Alejandro González Iñárritu</li>
+                                    </ul>
+
+                                    <div class="modal-trailer">
+                                        <!-- acá puede ir la imagen miniatura del trailer o el video de youTube -->
+                                        <img src="img/trailer-digger.jpg" alt="Trailer">
+                                        <div class="icono-play">▶</div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- días y horarios -->
+                            <section class="modal-inferior">
+                                <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+
+                                <!-- días -->
+                                <div class="selector-dias">
+
+                                    <input type="checkbox" id="jueves" class="check-dia">
+                                    <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+                                    <input type="checkbox" id="viernes" class="check-dia">
+                                    <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+                                    <input type="checkbox" id="sabado" class="check-dia">
+                                    <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+                                    <input type="checkbox" id="domingo" class="check-dia">
+                                    <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+                                    <input type="checkbox" id="lunes" class="check-dia">
+                                    <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+                                    <input type="checkbox" id="martes" class="check-dia">
+                                    <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+                                </div>
+
+                                <!-- formato y horarios -->
+                                <div class="selector-horarios">
+                                    <h4>2D CASTELLANO</h4>
+                                    <div class="fila-horas">
+
+                                        <input type="checkbox" id="hora12" class="check-hora">
+                                        <label for="hora12" class="btn-hora">12.00 h</label>
+
+                                        <input type="checkbox" id="hora1430" class="check-hora">
+                                        <label for="hora1430" class="btn-hora">14.30 h</label>
+
+                                        <input type="checkbox" id="hora16" class="check-hora">
+                                        <label for="hora16" class="btn-hora">16.00 h</label>
+
+                                        <input type="checkbox" id="hora18" class="check-hora">
+                                        <label for="hora18" class="btn-hora">18.00 h</label>
+
+                                        <input type="checkbox" id="hora2030" class="check-hora">
+                                        <label for="hora2030" class="btn-hora">20.30 h</label>
+                                    </div>
+
+                                    <h4>2D SUBTITULADA</h4>
+                                    <div class="fila-horas">
+
+                                        <input type="checkbox" id="hora1230" class="check-hora">
+                                        <label for="hora1230" class="btn-hora">12.30 h</label>
+
+                                        <input type="checkbox" id="hora15" class="check-hora">
+                                        <label for="hora15" class="btn-hora">15.00 h</label>
+
+                                        <input type="checkbox" id="hora1615" class="check-hora">
+                                        <label for="hora1615" class="btn-hora">16.15 h</label>
+
+                                        <input type="checkbox" id="hora1830" class="check-hora">
+                                        <label for="hora1830" class="btn-hora">18.30 h</label>
+
+                                        <input type="checkbox" id="hora20" class="check-hora">
+                                        <label for="hora20" class="btn-hora">20.00 h</label>
+
+                                    </div>
+                                </div>
+
+                                <!-- botón comprá tus entradas -->
+                                <button class="btn-comprar">Comprá tus entradas</button>
+                            </section>
+                        </div>
                     </div>
 
                 </article>
@@ -403,12 +514,13 @@
 
                 <h3>REDES SOCIALES</h3>
                 <div class="footer-redes">
-                    <a href="https://www.facebook.com/CinemacenterArgentina?locale=es_LA" aria-label="Facebook"><img src="img/svg/logo_redes.svg/logo_facebook.svg"
-                            alt="Facebook" width="25" height="25"></a>
-                    <a href="https://www.instagram.com/cinemacenterarg/" aria-label="Instagram" width="25" height="25"><img
-                            src="img/svg/logo_redes.svg/logo_instagram.svg" alt="Instagram" width="25" height="25"></a>
-                    <a href="https://www.tiktok.com/@cinemacenterarg" aria-label="TikTok"><img src="img/svg/logo_redes.svg/logo_tiktok.svg" alt="TikTok"
-                            width="25" height="25"></a>
+                    <a href="https://www.facebook.com/CinemacenterArgentina?locale=es_LA" aria-label="Facebook"><img
+                            src="img/svg/logo_redes.svg/logo_facebook.svg" alt="Facebook" width="25" height="25"></a>
+                    <a href="https://www.instagram.com/cinemacenterarg/" aria-label="Instagram" width="25"
+                        height="25"><img src="img/svg/logo_redes.svg/logo_instagram.svg" alt="Instagram" width="25"
+                            height="25"></a>
+                    <a href="https://www.tiktok.com/@cinemacenterarg" aria-label="TikTok"><img
+                            src="img/svg/logo_redes.svg/logo_tiktok.svg" alt="TikTok" width="25" height="25"></a>
                 </div>
             </div>
 
