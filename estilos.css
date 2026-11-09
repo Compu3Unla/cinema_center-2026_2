@@ -203,13 +203,14 @@ main {
     background-color: var(--azul);
     color: var(--blanco);
 
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo';
     font-size: 18px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
 
     border-radius: 50px;
+    border: none;
     box-sizing: border-box;
 }
 
@@ -379,22 +380,13 @@ footer {
     line-height: 32px;
 }
 
-/* ACÁ IRÍA EL TRAILER NI IDEA
+/* ACÁ IRÍA EL TRAILER NI IDEA */
 
 .modal-trailer {
     position: relative;
-    width: 100%;
-    max-width: 400px;
     border-radius: 12px;
     overflow: hidden;
 }
-
-.modal-trailer img {
-    width: 100%;
-    display: block;
-}
-
-*/
 
 /* LAYOUT INFERIOR (Horarios) */
 
@@ -422,6 +414,23 @@ footer {
 
 /* LAYOUT INFERIOR (Horarios) */
 
+.modal-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.modal-inferior h3 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.modal-inferior h4 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
 /* DÍAS */
 
 .selector-dias {
@@ -432,7 +441,7 @@ footer {
 }
 
 .btn-dia {
-    flex: 1;
+    padding: 16px 24px;
     padding: 10px;
     border: 3.3px solid var(--rojo);
     background-color: var(--blanco);
@@ -449,6 +458,14 @@ footer {
 }
 
 /* HORARIOS */
+
+.selector-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
 .fila-horas {
     display: flex;
@@ -475,8 +492,8 @@ footer {
 /* BOTÓN COMPRAR ENTRADAS */
 
 .btn-comprar {
-    display: block;
-    margin: 40px auto 0;
+    display: flex;
+    width: 200px;
     background-color: var(--azul);
     color: var(--blanco);
     font-family: "Archivo Narrow";
@@ -484,6 +501,7 @@ footer {
     border-radius: 30px;
     font-size: 24px;
     cursor: pointer;
+    justify-content: center;
 }
 
 /* ESTO ES PARA OCULTAR CHECKBOXES */
