@@ -358,7 +358,7 @@ footer {
 
 .modal-datos h2 {
     color: var(--rojo);
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -376,7 +376,8 @@ footer {
 }
 
 .sinopsis {
-    font-size: 20px;
+    color: var(--negro);
+    font-size: 18px;
     line-height: 32px;
 }
 
@@ -386,6 +387,7 @@ footer {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
+    padding-top: 40px;
 }
 
 /* LAYOUT INFERIOR (Horarios) */
