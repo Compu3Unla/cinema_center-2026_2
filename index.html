@@ -19,11 +19,54 @@
             <a href="index.html" class="boton-header">CARTELERA</a>
             <a href="#pre-estrenos" class="boton-header">PRE ESTRENOS</a>
             <a href="candy.html" class="boton-header">CANDY</a>
-            <!-- ACÁ FALTARÍA EL BOTÓN DE INICIAR SESIÓN -->
+            <button class="boton-header" popovertarget="popup-login">
+                <img src="img/svg/usuario.svg" alt="Iniciar sesión" width="15" height="15">
+            </button>
         </nav>
     </header>
 
     <main>
+
+        <!-- INICIO DE SESIÓN -->
+
+        <!-- POP-UP LOGIN -->
+        <div id="popup-login" class="popup-login" popover="auto">
+
+            <button class="btn-cerrar-login" popovertarget="popup-login" popovertargetaction="hide">
+                ×
+            </button>
+
+            <h2>¡HOLA, QUÉ BUENO<br> VERTE POR ACÁ!</h2>
+
+            <p class="subtitulo-login">Iniciá sesión para continuar</p>
+
+            <form class="form-login">
+
+                <input type="text" name="usuario" placeholder="Ingrese nombre de usuario" aria-label="Nombre de usuario"
+                    required>
+
+                <input type="password" name="password" placeholder="Ingrese contraseña" aria-label="Contraseña"
+                    required>
+
+                <a href="#" class="olvido-password">
+                    Olvidé mi contraseña
+                </a>
+
+                <div class="botones-login">
+
+                    <button type="button" class="btn-login">
+                        INGRESAR
+                    </button>
+
+                    <button type="button" class="btn-login">
+                        REGISTRARSE
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
 
         <!-- !!!!!!!!! INSERTE AQUÍ UN CARRUSEL COMO EL DE MILI CON JAVASCRIPT -->
 
