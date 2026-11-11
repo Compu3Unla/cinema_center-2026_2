@@ -23,56 +23,78 @@
                 <img src="img/svg/usuario.svg" alt="Iniciar sesión" width="15" height="15">
             </button>
         </nav>
-        <h1>hola</h1>
     </header>
 
     <main>
-
         <!-- INICIO DE SESIÓN -->
-
         <!-- POP-UP LOGIN -->
         <div id="popup-login" class="popup-login" popover="auto">
-
-            <button class="btn-cerrar-login" popovertarget="popup-login" popovertargetaction="hide">
-                ×
-            </button>
-
+            <button class="btn-cerrar-login" popovertarget="popup-login" popovertargetaction="hide">×</button>
             <h2>¡HOLA, QUÉ BUENO<br> VERTE POR ACÁ!</h2>
-
             <p class="subtitulo-login">Iniciá sesión para continuar</p>
-
             <form class="form-login">
-
                 <input type="text" name="usuario" placeholder="Ingrese nombre de usuario" aria-label="Nombre de usuario"
                     required>
-
                 <input type="password" name="password" placeholder="Ingrese contraseña" aria-label="Contraseña"
                     required>
-
-                <a href="#" class="olvido-password">
-                    Olvidé mi contraseña
-                </a>
-
+                <a href="#" class="olvido-password"> Olvidé mi contraseña </a>
                 <div class="botones-login">
-
-                    <button type="button" class="btn-login">
-                        INGRESAR
-                    </button>
-
-                    <button type="button" class="btn-login">
-                        REGISTRARSE
-                    </button>
-
+                    <button type="button" class="btn-login"> INGRESAR </button>
+                    <button type="button" class="btn-login">REGISTRARSE</button>
                 </div>
-
             </form>
-
         </div>
 
-        <!-- !!!!!!!!! INSERTE AQUÍ UN CARRUSEL COMO EL DE MILI CON JAVASCRIPT -->
+        <!-- carrusel -->
+        <section class="carrusel-principal">
+            <button class="flecha-carrusel anterior" id="anterior" aria-label="Película anterior">&#10094;</button>
+            <div class="contenedor-carrusel">
 
-        <!-- CARTELERA -->
+                <article class="banner activo">
+                   <img src="img/posters-carrousel-web/carrusel_avengers_doomday.jpg" alt="dr-doom" class="imagen-banner">
+                   <div class="degradado-banner"></div>
+                   <div class="contenido-banner">
+                    <p class="fecha-banner"> Preventa 28 de Septiembre </p>
+                    <h1>PREVENTA</h1>
+                    <p class="mini-texto">Reservá tu entrada en todos los formatos disponibles 2D y 3D</p>
+                    <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
+                   </div>
+                </article>
+        
+                <article class="banner activo">
+                   <img src="img/posters-carrousel-web/carrusel_redisent_evil.jpg" alt="resident-evil" class="imagen-banner">
+                   <div class="degradado-banner"></div>
+                   <div class="contenido-banner">
+                    <p class="fecha-banner">Estreno 01 de Octubre</p>
+                    <h1>LAS PELÍCULAS QUE CAMBIARON HALLOWEEN EN UNA NOCHE DE TERROR</h1>
+                    <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
+                   </div>
+                </article>
+                
+                <article class="banner activo">
+                   <img src="img/posters-carrousel-web/carrusel_endgame.jpg" alt="end-game" class="imagen-banner">
+                   <div class="degradado-banner"></div>
+                   <div class="contenido-banner">
+                   <p class="fecha-banner">Estreno 01 de Octubre</p>
+                   <h1>REVIVÍ LA MEJOR PELÍCULA DE SUPERHÉROES EN LA ÚLTIMA DÉCADA</h1>
+                   <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
+                   </div>
+                </article>
 
+                <article class="banner activo">
+                   <img src="img/posters-carrousel-web/carrusel_niños.jpg" alt="niños" class="imagen-banner">
+                   <div class="degradado-banner"></div>
+                   <div class="contenido-banner">
+                   <p class="fecha-banner">Estreno 01 de Octubre</p>
+                   <h1>¡FESTEJÁ TU CUMPLE EN EL CINEMACENTER!</h1>
+                   <a href="entradas.html" class="boton-banner">Más info</a>
+                   </div>
+                </article>
+           </div>
+           <button class="flecha-carrusel siguiente" id="siguiente" aria-label="Película siguiente"> &#10095;</button>
+        </section> 
+   
+       <!-- CARTELERA -->
         <section id="cartelera">
             <div class="titulares">
                 <img src="img/svg/estrella_titulares.svg" alt="estrella-titulares" width="30" height="30">
@@ -80,11 +102,8 @@
             </div>
 
             <!-- CARTELERA - GALERÍA -->
-
             <div class="peliculas">
-
                 <!-- PRIMERA FILA -->
-
                 <article class="pelicula">
                     <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg" alt="Resident Evil" width="290"
                         height="422">
@@ -92,7 +111,6 @@
                         <h3>RESIDENT EVIL</h3>
                         <p>2D - 3D</p>
                     </div>
-
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>TERROR</p>
@@ -100,21 +118,15 @@
                             VER HORARIOS
                         </button>
                     </div>
-
                     <!-- ventana emergente -->
                     <div id="modal-resident-evil" class="modal-pelicula" popover="auto">
                         <div class="modal-contenedor-interno">
-
                             <!-- Botón para cerrar la ventana -->
-                            <button class="btn-cerrar" popovertarget="modal-digger" popovertargetaction="hide">
-                                X
-                            </button>
+                            <button class="btn-cerrar" popovertarget="modal-digger" popovertargetaction="hide"> X </button>
 
-                            <!-- info. película -->
                             <section class="modal-superior">
                                 <div class="modal-poster">
-                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"
-                                        alt="Resident Evil" width="600" height="900">
+                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"alt="Resident Evil" width="600" height="900">
                                 </div>
 
                                 <div class="modal-datos">
@@ -124,14 +136,12 @@
                                         Abrams) se ve inmerso en una carrera de acción sin descanso por la
                                         supervivencia, mientras el caos se desata a su alrededor.
                                     </p>
-
                                     <ul class="ficha-tecnica">
                                         <li><strong>FORMATO:</strong> 2D - 3D</li>
                                         <li><strong>DURACIÓN:</strong> 94 min.</li>
                                         <li><strong>GÉNERO:</strong> TERROR</li>
                                         <li><strong>DIRECTOR:</strong> Zach Cregger</li>
                                     </ul>
-
                                     <div class="modal-trailer">
                                         <iframe src="https://www.youtube.com/embed/SK7yfYeUQ2Q" width="540" height="340"
                                             title="Tráiler de Resident Evil" allowfullscreen>
@@ -143,10 +153,8 @@
                             <!-- días y horarios -->
                             <section class="modal-inferior">
                                 <h3>DÍAS, HORARIOS Y FORMATOS</h3>
-
                                 <!-- días -->
                                 <div class="selector-dias">
-
                                     <input type="checkbox" id="jueves" class="check-dia">
                                     <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
 
@@ -166,12 +174,10 @@
                                     <label for="martes" class="btn-dia">MARTES<br>06/10</label>
 
                                 </div>
-
                                 <!-- formato y horarios -->
                                 <div class="selector-horarios">
                                     <h4>2D CASTELLANO</h4>
                                     <div class="fila-horas">
-
                                         <input type="checkbox" id="hora12" class="check-hora">
                                         <label for="hora12" class="btn-hora">12.00 h</label>
 
@@ -190,7 +196,6 @@
 
                                     <h4>2D SUBTITULADA</h4>
                                     <div class="fila-horas">
-
                                         <input type="checkbox" id="hora1230" class="check-hora">
                                         <label for="hora1230" class="btn-hora">12.30 h</label>
 
@@ -208,13 +213,12 @@
 
                                     </div>
                                 </div>
-
                             </section>
+
                             <!-- botón comprá tus entradas -->
                             <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
                         </div>
                     </div>
-
                 </article>
 
                 <article class="pelicula">
@@ -224,7 +228,6 @@
                         <h3>AVENGERS ENDGAME</h3>
                         <p>2D - 3D</p>
                     </div>
-
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>CIENCIA FICCIÓN</p>
@@ -232,24 +235,20 @@
                             VER HORARIOS
                         </button>
                     </div>
-
                     <!-- ventana emergente -->
                     <div id="modal-avengers-endgame" class="modal-pelicula" popover="auto">
                         <div class="modal-contenedor-interno">
-
                             <!-- Botón para cerrar la ventana -->
                             <button class="btn-cerrar" popovertarget="modal-avengers-endgame"
                                 popovertargetaction="hide">
                                 X
                             </button>
-
                             <!-- info. película -->
                             <section class="modal-superior">
                                 <div class="modal-poster">
                                     <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"
                                         alt="Resident Evil" width="600" height="900">
                                 </div>
-
                                 <div class="modal-datos">
                                     <h2>RESIDENT EVIL</h2>
                                     <p class="sinopsis">Película basada en la saga de videojuegos de Capcom del mismo
@@ -257,14 +256,12 @@
                                         Abrams) se ve inmerso en una carrera de acción sin descanso por la
                                         supervivencia, mientras el caos se desata a su alrededor.
                                     </p>
-
                                     <ul class="ficha-tecnica">
                                         <li><strong>FORMATO:</strong> 2D - 3D</li>
                                         <li><strong>DURACIÓN:</strong> 94 min.</li>
                                         <li><strong>GÉNERO:</strong> TERROR</li>
                                         <li><strong>DIRECTOR:</strong> Zach Cregger</li>
                                     </ul>
-
                                     <div class="modal-trailer">
                                         <iframe src="https://www.youtube.com/embed/SK7yfYeUQ2Q" width="540" height="340"
                                             title="Tráiler de Resident Evil" allowfullscreen>
@@ -341,7 +338,6 @@
 
                                     </div>
                                 </div>
-
                             </section>
                             <!-- botón comprá tus entradas -->
                             <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
@@ -355,7 +351,6 @@
                         <h3>DIGGER</h3>
                         <p>2D - 3D</p>
                     </div>
-
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>COMEDIA</p>
@@ -363,23 +358,16 @@
                             VER HORARIOS
                         </button>
                     </div>
-
                     <!-- ventana emergente -->
                     <div id="modal-digger" class="modal-pelicula" popover="auto">
                         <div class="modal-contenedor-interno">
-
                             <!-- Botón para cerrar la ventana -->
-                            <button class="btn-cerrar" popovertarget="modal-digger" popovertargetaction="hide">
-                                X
-                            </button>
-
+                            <button class="btn-cerrar" popovertarget="modal-digger" popovertargetaction="hide"> X </button>
                             <!-- info. película -->
                             <section class="modal-superior">
                                 <div class="modal-poster">
-                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"
-                                        alt="Resident Evil" width="600" height="900">
+                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"alt="Resident Evil" width="600" height="900">
                                 </div>
-
                                 <div class="modal-datos">
                                     <h2>RESIDENT EVIL</h2>
                                     <p class="sinopsis">Película basada en la saga de videojuegos de Capcom del mismo
@@ -387,14 +375,12 @@
                                         Abrams) se ve inmerso en una carrera de acción sin descanso por la
                                         supervivencia, mientras el caos se desata a su alrededor.
                                     </p>
-
                                     <ul class="ficha-tecnica">
                                         <li><strong>FORMATO:</strong> 2D - 3D</li>
                                         <li><strong>DURACIÓN:</strong> 94 min.</li>
                                         <li><strong>GÉNERO:</strong> TERROR</li>
                                         <li><strong>DIRECTOR:</strong> Zach Cregger</li>
                                     </ul>
-
                                     <div class="modal-trailer">
                                         <iframe src="https://www.youtube.com/embed/SK7yfYeUQ2Q" width="540" height="340"
                                             title="Tráiler de Resident Evil" allowfullscreen>
@@ -402,14 +388,11 @@
                                     </div>
                                 </div>
                             </section>
-
                             <!-- días y horarios -->
                             <section class="modal-inferior">
                                 <h3>DÍAS, HORARIOS Y FORMATOS</h3>
-
                                 <!-- días -->
                                 <div class="selector-dias">
-
                                     <input type="checkbox" id="jueves" class="check-dia">
                                     <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
 
@@ -434,7 +417,6 @@
                                 <div class="selector-horarios">
                                     <h4>2D CASTELLANO</h4>
                                     <div class="fila-horas">
-
                                         <input type="checkbox" id="hora12" class="check-hora">
                                         <label for="hora12" class="btn-hora">12.00 h</label>
 
@@ -468,17 +450,14 @@
 
                                         <input type="checkbox" id="hora20" class="check-hora">
                                         <label for="hora20" class="btn-hora">20.00 h</label>
-
                                     </div>
                                 </div>
-
                             </section>
                             <!-- botón comprá tus entradas -->
                             <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
                         </div>
                     </div>
                 </article>
-
                 <article class="pelicula">
                     <img src="img/posters-cartelera-web/spiderman-un-nuevo-dia-posterpreview.jpg" alt="Spiderman">
                     <div class="info-pelicula" width="290" height="422">
@@ -637,20 +616,15 @@
                         <h3>LA ODISEA</h3>
                         <p>2D - 3D</p>
                     </div>
-
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>ACCIÓN</p>
                         <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
                         <!-- acá, para no hacer 234892 html se puede hacer lo de las ventanas emergentes, pero no sé, por ahora quedará así. -->
-
                     </div>
-
                 </article>
-
                 <article class="pelicula">
-                    <img src="img/posters-cartelera-web/el-corazon-de-la-bestia_posterpreview.jpg"
-                        alt="El corazón de la bestia" width="290" height="422">
+                    <img src="img/posters-cartelera-web/el-corazon-de-la-bestia_posterpreview.jpg" alt="El corazón de la bestia" width="290" height="422">
                     <div class="info-pelicula">
                         <h3>EL CORAZÓN DE LA BESTIA</h3>
                         <p>2D - 3D</p>
@@ -885,8 +859,15 @@
                 <h2>PRE ESTRENOS</h2>
             </div>
 
-            <!-- !!!!!!!!! INSERTE AQUÍ UN CARRUSEL COMO EL DE MILI CON JAVASCRIPT -->
-
+            <!-- carrusel de tarjetas -->
+            <div class="preestrenos-carrusel">
+                <button class="flecha-preestrenos anterior-preestrenos" id="preestrenos-anterior" aria-label="Películas anteriores">&#10094;</button>
+                <div class="preestrenos-ventana">
+                    <div class="preestrenos-pista" id="preestrenos-pista">
+                    </div>
+                </div>
+                <button class="flecha-preestrenos siguiente-preestrenos" id="preestrenos-siguiente" aria-label="Películas siguientes">&#10095;</button>
+            </div>
         </section>
     </main>
 
@@ -953,5 +934,5 @@
     </footer>
 
 </body>
-
+<script src="interacciones.js"></script>
 </html>

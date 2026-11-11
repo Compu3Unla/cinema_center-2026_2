@@ -205,7 +205,10 @@ header nav {
 /* -------------------- */
 
 main {
-    margin: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,16 +232,20 @@ main {
 /* --- CARTELERA --- */
 
 .cartelera {
-    padding: 30px;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 /* cada tarjeta de pelis */
 
 .peliculas {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 30px;
-    max-width: 1570px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .pelicula {
@@ -246,17 +253,18 @@ main {
     flex-direction: column;
     position: relative;
     overflow: hidden;
-
     border-radius: 30px;
-    width: 290px;
+    width: 100%;
+    min-width: 0;
     height: 100%;
 }
 
 .pelicula img {
-    object-fit: cover;
     display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-
 /* info pelis */
 
 .info-pelicula {
@@ -291,8 +299,8 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 290px;
-    height: 422px;
+    width: 100%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -302,12 +310,12 @@ main {
     padding: 30px;
     box-sizing: border-box;
 
-    background: linear-gradient(transparent,
-            rgba(0, 0, 0, 0.95));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
 
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 
 .popup-pelicula p {
     color: var(--blanco);
@@ -821,4 +829,211 @@ footer {
 .boton-volver:hover,
 .boton-continuar:hover {
     background-color: #1555D9;
+}
+
+/* -------------------------------- */
+/* --- CARRUSEL PRINCIPAL --- */
+/* -------------------------------- */
+
+.carrusel-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto 40px;
+}
+/* CONTENEDOR DE LOS BANNERS */
+.contenedor-carrusel {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+/* CADA BANNER */
+.banner {
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner.activo {
+    display: block;
+}
+/* IMAGEN DE FONDO */
+.imagen-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+/*  NEGRO */
+.degradado-banner {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        #000000 0%,
+        #000000 40%,
+        rgba(0, 0, 0, 0.886) 48%,
+        transparent 75%
+    );
+    z-index: 2;
+}
+
+
+/* CONTENIDO DEL TEXTO */
+
+.contenido-banner {
+    z-index: 3;
+    width: 50%;
+}
+/* TEXTO Y BOTÓN */
+.contenido-banner {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 48%;
+    height: 100%;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    color: var(--blanco);
+}
+.fecha-banner {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.contenido-banner h1 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 0.98;
+    margin-bottom: 1px;
+}
+.mini-texto{
+    margin-bottom: 20px;
+}
+.boton-banner {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+
+.boton-banner:hover {
+    background-color: var(--azul);
+}
+/* FLECHAS EXTERNAS */
+.flecha-carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--blanco);
+    color: var(--negro);
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.flecha-carrusel:hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+/* ADAPTACIÓN A CELULARES */
+
+/* CARRUSEL PRE ESTRENOS */
+
+.preestrenos-carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+.preestrenos-ventana {
+    width: 100%;
+    overflow: hidden;
+}
+
+.preestrenos-pista {
+    display: flex;
+    gap: 18px;
+    transition: transform 0.4s ease;
+}
+
+
+/* TARJETAS */
+.preestrenos-pista .pelicula {
+    flex: 0 0 calc((100% - 54px) / 4);
+    width: auto;
+    min-width: 0;
+    height: auto;
+}
+/* POP-UP DE LAS TARJETAS */
+.preestrenos-pista .popup-pelicula {
+    width: 100%;
+    height: 100%;
+}
+/* FLECHAS */
+.flecha-preestrenos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--blanco);
+    color: var(--negro);
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.flecha-preestrenos:hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+/* PUNTITOS */
+.preestrenos-puntos {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0 40px;
+}
+.punto-preestreno {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--negro);
+    cursor: pointer;
+}
+.punto-preestreno.activo {
+    background-color: var(--rojo);
 }
