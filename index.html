@@ -27,7 +27,6 @@
 
     <main>
         <!-- INICIO DE SESIÓN -->
-        <!-- POP-UP LOGIN -->
         <div id="popup-login" class="popup-login" popover="auto">
             <button class="btn-cerrar-login" popovertarget="popup-login" popovertargetaction="hide">×</button>
             <h2>¡HOLA, QUÉ BUENO<br> VERTE POR ACÁ!</h2>
@@ -51,50 +50,52 @@
             <div class="contenedor-carrusel">
 
                 <article class="banner activo">
-                   <img src="img/posters-carrousel-web/carrusel_avengers_doomday.jpg" alt="dr-doom" class="imagen-banner">
-                   <div class="degradado-banner"></div>
-                   <div class="contenido-banner">
-                    <p class="fecha-banner"> Preventa 28 de Septiembre </p>
-                    <h1>PREVENTA</h1>
-                    <p class="mini-texto">Reservá tu entrada en todos los formatos disponibles 2D y 3D</p>
-                    <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
-                   </div>
-                </article>
-        
-                <article class="banner activo">
-                   <img src="img/posters-carrousel-web/carrusel_redisent_evil.jpg" alt="resident-evil" class="imagen-banner">
-                   <div class="degradado-banner"></div>
-                   <div class="contenido-banner">
-                    <p class="fecha-banner">Estreno 01 de Octubre</p>
-                    <h1>LAS PELÍCULAS QUE CAMBIARON HALLOWEEN EN UNA NOCHE DE TERROR</h1>
-                    <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
-                   </div>
-                </article>
-                
-                <article class="banner activo">
-                   <img src="img/posters-carrousel-web/carrusel_endgame.jpg" alt="end-game" class="imagen-banner">
-                   <div class="degradado-banner"></div>
-                   <div class="contenido-banner">
-                   <p class="fecha-banner">Estreno 01 de Octubre</p>
-                   <h1>REVIVÍ LA MEJOR PELÍCULA DE SUPERHÉROES EN LA ÚLTIMA DÉCADA</h1>
-                   <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
-                   </div>
+                    <img src="img/posters-carrousel-web/carrusel_avengers_doomday.jpg" alt="dr-doom"
+                        class="imagen-banner">
+                    <div class="degradado-banner"></div>
+                    <div class="contenido-banner">
+                        <p class="fecha-banner"> Preventa 28 de Septiembre </p>
+                        <h1>PREVENTA</h1>
+                        <p class="mini-texto">Reservá tu entrada en todos los formatos disponibles 2D y 3D</p>
+                        <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
+                    </div>
                 </article>
 
                 <article class="banner activo">
-                   <img src="img/posters-carrousel-web/carrusel_niños.jpg" alt="niños" class="imagen-banner">
-                   <div class="degradado-banner"></div>
-                   <div class="contenido-banner">
-                   <p class="fecha-banner">Estreno 01 de Octubre</p>
-                   <h1>¡FESTEJÁ TU CUMPLE EN EL CINEMACENTER!</h1>
-                   <a href="entradas.html" class="boton-banner">Más info</a>
-                   </div>
+                    <img src="img/posters-carrousel-web/carrusel_redisent_evil.jpg" alt="resident-evil"
+                        class="imagen-banner">
+                    <div class="degradado-banner"></div>
+                    <div class="contenido-banner">
+                        <p class="fecha-banner">Estreno 01 de Octubre</p>
+                        <h1>LAS PELÍCULAS QUE CAMBIARON HALLOWEEN EN UNA NOCHE DE TERROR</h1>
+                        <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
+                    </div>
                 </article>
-           </div>
-           <button class="flecha-carrusel siguiente" id="siguiente" aria-label="Película siguiente"> &#10095;</button>
-        </section> 
-   
-       <!-- CARTELERA -->
+
+                <article class="banner activo">
+                    <img src="img/posters-carrousel-web/carrusel_endgame.jpg" alt="end-game" class="imagen-banner">
+                    <div class="degradado-banner"></div>
+                    <div class="contenido-banner">
+                        <p class="fecha-banner">Estreno 01 de Octubre</p>
+                        <h1>REVIVÍ LA MEJOR PELÍCULA DE SUPERHÉROES EN LA ÚLTIMA DÉCADA</h1>
+                        <a href="entradas.html" class="boton-banner"> Comprá tus entradas</a>
+                    </div>
+                </article>
+
+                <article class="banner activo">
+                    <img src="img/posters-carrousel-web/carrusel_niños.jpg" alt="niños" class="imagen-banner">
+                    <div class="degradado-banner"></div>
+                    <div class="contenido-banner">
+                        <p class="fecha-banner">Estreno 01 de Octubre</p>
+                        <h1>¡FESTEJÁ TU CUMPLE EN EL CINEMACENTER!</h1>
+                        <a href="entradas.html" class="boton-banner">Más info</a>
+                    </div>
+                </article>
+            </div>
+            <button class="flecha-carrusel siguiente" id="siguiente" aria-label="Película siguiente"> &#10095;</button>
+        </section>
+
+        <!-- CARTELERA -->
         <section id="cartelera">
             <div class="titulares">
                 <img src="img/svg/estrella_titulares.svg" alt="estrella-titulares" width="30" height="30">
@@ -118,15 +119,17 @@
                             VER HORARIOS
                         </button>
                     </div>
-                    <!-- ventana emergente -->
+                    <!-- VENTANA EMERGENTE -->
                     <div id="modal-resident-evil" class="modal-pelicula" popover="auto">
                         <div class="modal-contenedor-interno">
-                            <!-- Botón para cerrar la ventana -->
-                            <button class="btn-cerrar" popovertarget="modal-digger" popovertargetaction="hide"> X </button>
+
+                            <button class="btn-cerrar" popovertarget="modal-resident-evil" popovertargetaction="hide"> X
+                            </button>
 
                             <section class="modal-superior">
                                 <div class="modal-poster">
-                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"alt="Resident Evil" width="600" height="900">
+                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"
+                                        alt="Resident Evil" width="600" height="900">
                                 </div>
 
                                 <div class="modal-datos">
@@ -235,10 +238,10 @@
                             VER HORARIOS
                         </button>
                     </div>
-                    <!-- ventana emergente -->
+                    <!-- VENTANA EMERGENTE -->
                     <div id="modal-avengers-endgame" class="modal-pelicula" popover="auto">
                         <div class="modal-contenedor-interno">
-                            <!-- Botón para cerrar la ventana -->
+
                             <button class="btn-cerrar" popovertarget="modal-avengers-endgame"
                                 popovertargetaction="hide">
                                 X
@@ -246,25 +249,24 @@
                             <!-- info. película -->
                             <section class="modal-superior">
                                 <div class="modal-poster">
-                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"
-                                        alt="Resident Evil" width="600" height="900">
+                                    <img src="img/posters-cartelera-vent-emerg/avengers-endgame.jpg"
+                                        alt="Avengers Endgame" width="600" height="900">
                                 </div>
                                 <div class="modal-datos">
-                                    <h2>RESIDENT EVIL</h2>
-                                    <p class="sinopsis">Película basada en la saga de videojuegos de Capcom del mismo
-                                        nombre. En una reinvención totalmente nueva, el mensajero médico Bryan (Austin
-                                        Abrams) se ve inmerso en una carrera de acción sin descanso por la
-                                        supervivencia, mientras el caos se desata a su alrededor.
+                                    <h2>AVENGERS ENDGAME</h2>
+                                    <p class="sinopsis">Los Vengadores sobrevivientes unen fuerzas en un último intento
+                                        desesperado por revertir el daño causado por Thanos y restaurar el equilibrio
+                                        del universo.
                                     </p>
                                     <ul class="ficha-tecnica">
                                         <li><strong>FORMATO:</strong> 2D - 3D</li>
-                                        <li><strong>DURACIÓN:</strong> 94 min.</li>
-                                        <li><strong>GÉNERO:</strong> TERROR</li>
-                                        <li><strong>DIRECTOR:</strong> Zach Cregger</li>
+                                        <li><strong>DURACIÓN:</strong> 181 min.</li>
+                                        <li><strong>GÉNERO:</strong> CIENCIA FICCIÓN</li>
+                                        <li><strong>DIRECTOR:</strong> Anthony y Joe Russo</li>
                                     </ul>
                                     <div class="modal-trailer">
-                                        <iframe src="https://www.youtube.com/embed/SK7yfYeUQ2Q" width="540" height="340"
-                                            title="Tráiler de Resident Evil" allowfullscreen>
+                                        <iframe src="https://www.youtube.com/embed/u7QErIFCc7k" width="540" height="340"
+                                            title="Tráiler de Avengers Endgame" allowfullscreen>
                                         </iframe>
                                     </div>
                                 </div>
@@ -354,7 +356,7 @@
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>COMEDIA</p>
-                        <button type="button" class="btn-horarios" popovertarget="modal-resident-evil">
+                        <button type="button" class="btn-horarios" popovertarget="modal-digger">
                             VER HORARIOS
                         </button>
                     </div>
@@ -362,24 +364,24 @@
                     <div id="modal-digger" class="modal-pelicula" popover="auto">
                         <div class="modal-contenedor-interno">
                             <!-- Botón para cerrar la ventana -->
-                            <button class="btn-cerrar" popovertarget="modal-digger" popovertargetaction="hide"> X </button>
+                            <button class="btn-cerrar" popovertarget="modal-digger" popovertargetaction="hide"> X
+                            </button>
                             <!-- info. película -->
                             <section class="modal-superior">
                                 <div class="modal-poster">
-                                    <img src="img/posters-cartelera-web/resident-evil_posterpreview.jpg"alt="Resident Evil" width="600" height="900">
+                                    <img src="img/posters-cartelera-vent-emerg/digger.jpg" alt="Digger" width="600"
+                                        height="900">
                                 </div>
                                 <div class="modal-datos">
-                                    <h2>RESIDENT EVIL</h2>
-                                    <p class="sinopsis">Película basada en la saga de videojuegos de Capcom del mismo
-                                        nombre. En una reinvención totalmente nueva, el mensajero médico Bryan (Austin
-                                        Abrams) se ve inmerso en una carrera de acción sin descanso por la
-                                        supervivencia, mientras el caos se desata a su alrededor.
+                                    <h2>DIGGER</h2>
+                                    <p class="sinopsis">El hombre más poderoso del mundo comete un error catastrófico
+                                        que lo obliga a replantearse todo su imperio y enfrentarse a las consecuencias.
                                     </p>
                                     <ul class="ficha-tecnica">
                                         <li><strong>FORMATO:</strong> 2D - 3D</li>
-                                        <li><strong>DURACIÓN:</strong> 94 min.</li>
-                                        <li><strong>GÉNERO:</strong> TERROR</li>
-                                        <li><strong>DIRECTOR:</strong> Zach Cregger</li>
+                                        <li><strong>DURACIÓN:</strong> 128 min.</li>
+                                        <li><strong>GÉNERO:</strong> COMEDIA</li>
+                                        <li><strong>DIRECTOR:</strong> Alejandro González Iñárritu</li>
                                     </ul>
                                     <div class="modal-trailer">
                                         <iframe src="https://www.youtube.com/embed/SK7yfYeUQ2Q" width="540" height="340"
@@ -458,10 +460,11 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="pelicula">
                     <img src="img/posters-cartelera-web/spiderman-un-nuevo-dia-posterpreview.jpg" alt="Spiderman">
                     <div class="info-pelicula" width="290" height="422">
-                        <h3>SPIDER-MAN:BRAND NEW DAY</h3>
+                        <h3>SPIDERMAN: BRAND NEW DAY</h3>
                         <p>2D - 3D</p>
                     </div>
 
@@ -472,6 +475,107 @@
                             VER HORARIOS
                         </button>
 
+                        <!-- ventana emergente -->
+                        <div id="modal-spiderman" class="modal-pelicula" popover="auto">
+                            <div class="modal-contenedor-interno">
+                                <!-- Botón para cerrar la ventana -->
+                                <button class="btn-cerrar" popovertarget="modal-spiderman" popovertargetaction="hide"> X
+                                </button>
+                                <!-- info. película -->
+                                <section class="modal-superior">
+                                    <div class="modal-poster">
+                                        <img src="img/posters-cartelera-vent-emerg/spiderman-un-nuevo-dia.jpg"
+                                            alt="Spiderman" width="600" height="900">
+                                    </div>
+                                    <div class="modal-datos">
+                                        <h2>SPIDERMAN UN NUEVO DÍA</h2>
+                                        <!-- esto por alguna razon agarra el estilo de "popup-pelicula p, y se ve blanco, ni idea"-->
+                                        <p class="sinopsis">Tras un evento que altera la realidad, Peter Parker debe
+                                            enfrentar nuevos villanos y rehacer su vida desde cero en las calles de
+                                            Nueva York.
+                                        </p>
+                                        <ul class="ficha-tecnica">
+                                            <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                            <li><strong>DURACIÓN:</strong> 135 min.</li>
+                                            <li><strong>GÉNERO:</strong> CIENCIA FICCIÓN</li>
+                                            <li><strong>DIRECTOR:</strong> Jon Watts</li>
+                                        </ul>
+                                        <div class="modal-trailer">
+                                            <iframe src="https://www.youtube.com/embed/pqLSLoDkZWE" width="540"
+                                                height="340" title="Tráiler de Spiderman" allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- días y horarios -->
+                                <section class="modal-inferior">
+                                    <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                    <!-- días -->
+                                    <div class="selector-dias">
+                                        <input type="checkbox" id="jueves" class="check-dia">
+                                        <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+                                        <input type="checkbox" id="viernes" class="check-dia">
+                                        <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+                                        <input type="checkbox" id="sabado" class="check-dia">
+                                        <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+                                        <input type="checkbox" id="domingo" class="check-dia">
+                                        <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+                                        <input type="checkbox" id="lunes" class="check-dia">
+                                        <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+                                        <input type="checkbox" id="martes" class="check-dia">
+                                        <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+                                    </div>
+
+                                    <!-- formato y horarios -->
+                                    <div class="selector-horarios">
+                                        <h4>2D CASTELLANO</h4>
+                                        <div class="fila-horas">
+                                            <input type="checkbox" id="hora12" class="check-hora">
+                                            <label for="hora12" class="btn-hora">12.00 h</label>
+
+                                            <input type="checkbox" id="hora1430" class="check-hora">
+                                            <label for="hora1430" class="btn-hora">14.30 h</label>
+
+                                            <input type="checkbox" id="hora16" class="check-hora">
+                                            <label for="hora16" class="btn-hora">16.00 h</label>
+
+                                            <input type="checkbox" id="hora18" class="check-hora">
+                                            <label for="hora18" class="btn-hora">18.00 h</label>
+
+                                            <input type="checkbox" id="hora2030" class="check-hora">
+                                            <label for="hora2030" class="btn-hora">20.30 h</label>
+                                        </div>
+
+                                        <h4>2D SUBTITULADA</h4>
+                                        <div class="fila-horas">
+
+                                            <input type="checkbox" id="hora1230" class="check-hora">
+                                            <label for="hora1230" class="btn-hora">12.30 h</label>
+
+                                            <input type="checkbox" id="hora15" class="check-hora">
+                                            <label for="hora15" class="btn-hora">15.00 h</label>
+
+                                            <input type="checkbox" id="hora1615" class="check-hora">
+                                            <label for="hora1615" class="btn-hora">16.15 h</label>
+
+                                            <input type="checkbox" id="hora1830" class="check-hora">
+                                            <label for="hora1830" class="btn-hora">18.30 h</label>
+
+                                            <input type="checkbox" id="hora20" class="check-hora">
+                                            <label for="hora20" class="btn-hora">20.00 h</label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- botón comprá tus entradas -->
+                                <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                            </div>
+                        </div>
 
                 </article>
 
@@ -502,7 +606,7 @@
                             <!-- info. película -->
                             <section class="modal-superior">
                                 <div class="modal-poster">
-                                    <img src="img/posters-cartelera-web/coyote-vs-acme.jpg" alt="Coyote vs Acme"
+                                    <img src="img/posters-cartelera-vent-emerg/coyote-vs-acme.jpg" alt="Coyote vs Acme"
                                         width="600" height="900">
                                 </div>
 
@@ -524,8 +628,8 @@
                                     </ul>
 
                                     <div class="modal-trailer">
-                                        <iframe src="https://www.youtube.com/embed/SK7yfYeUQ2Q" width="540" height="340"
-                                            title="Tráiler de Resident Evil" allowfullscreen>
+                                        <iframe src="https://www.youtube.com/embed/Yj-Nm47IW9k" width="540" height="340"
+                                            title="Tráiler de Coyote VS Acme" allowfullscreen>
                                         </iframe>
                                     </div>
                                 </div>
@@ -619,12 +723,116 @@
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>ACCIÓN</p>
-                        <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
-                        <!-- acá, para no hacer 234892 html se puede hacer lo de las ventanas emergentes, pero no sé, por ahora quedará así. -->
+                        <button type="button" class="btn-horarios" popovertarget="modal-la-odisea">
+                            VER HORARIOS
+                        </button>
                     </div>
+
+                    <!-- ventana emergente -->
+                    <div id="modal-la-odisea" class="modal-pelicula" popover="auto">
+                        <div class="modal-contenedor-interno">
+                            <!-- Botón para cerrar la ventana -->
+                            <button class="btn-cerrar" popovertarget="modal-la-odisea" popovertargetaction="hide"> X
+                            </button>
+                            <!-- info. película -->
+                            <section class="modal-superior">
+                                <div class="modal-poster">
+                                    <img src="img/posters-cartelera-vent-emerg/la-odisea.jpg" alt="La Odisea"
+                                        width="600" height="900">
+                                </div>
+                                <div class="modal-datos">
+                                    <h2>LA ODISEA</h2>
+                                    <p class="sinopsis">Una épica aventura que sigue a un valiente héroe en su largo y
+                                        peligroso viaje de regreso a casa tras años de guerra y exilio.
+                                    </p>
+                                    <ul class="ficha-tecnica">
+                                        <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                        <li><strong>DURACIÓN:</strong> 142 min.</li>
+                                        <li><strong>GÉNERO:</strong> ACCIÓN</li>
+                                        <li><strong>DIRECTOR:</strong> Denis Villeneuve</li>
+                                    </ul>
+                                    <div class="modal-trailer">
+                                        <iframe src="https://www.youtube.com/embed/7GxoGRGkhBQ" width="540" height="340"
+                                            title="Tráiler de La Odisea" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- días y horarios -->
+                            <section class="modal-inferior">
+                                <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                <!-- días -->
+                                <div class="selector-dias">
+                                    <input type="checkbox" id="jueves" class="check-dia">
+                                    <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+                                    <input type="checkbox" id="viernes" class="check-dia">
+                                    <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+                                    <input type="checkbox" id="sabado" class="check-dia">
+                                    <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+                                    <input type="checkbox" id="domingo" class="check-dia">
+                                    <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+                                    <input type="checkbox" id="lunes" class="check-dia">
+                                    <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+                                    <input type="checkbox" id="martes" class="check-dia">
+                                    <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+                                </div>
+
+                                <!-- formato y horarios -->
+                                <div class="selector-horarios">
+                                    <h4>2D CASTELLANO</h4>
+                                    <div class="fila-horas">
+                                        <input type="checkbox" id="hora12" class="check-hora">
+                                        <label for="hora12" class="btn-hora">12.00 h</label>
+
+                                        <input type="checkbox" id="hora1430" class="check-hora">
+                                        <label for="hora1430" class="btn-hora">14.30 h</label>
+
+                                        <input type="checkbox" id="hora16" class="check-hora">
+                                        <label for="hora16" class="btn-hora">16.00 h</label>
+
+                                        <input type="checkbox" id="hora18" class="check-hora">
+                                        <label for="hora18" class="btn-hora">18.00 h</label>
+
+                                        <input type="checkbox" id="hora2030" class="check-hora">
+                                        <label for="hora2030" class="btn-hora">20.30 h</label>
+                                    </div>
+
+                                    <h4>2D SUBTITULADA</h4>
+                                    <div class="fila-horas">
+
+                                        <input type="checkbox" id="hora1230" class="check-hora">
+                                        <label for="hora1230" class="btn-hora">12.30 h</label>
+
+                                        <input type="checkbox" id="hora15" class="check-hora">
+                                        <label for="hora15" class="btn-hora">15.00 h</label>
+
+                                        <input type="checkbox" id="hora1615" class="check-hora">
+                                        <label for="hora1615" class="btn-hora">16.15 h</label>
+
+                                        <input type="checkbox" id="hora1830" class="check-hora">
+                                        <label for="hora1830" class="btn-hora">18.30 h</label>
+
+                                        <input type="checkbox" id="hora20" class="check-hora">
+                                        <label for="hora20" class="btn-hora">20.00 h</label>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- botón comprá tus entradas -->
+                            <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                        </div>
+                    </div>
+
                 </article>
+
                 <article class="pelicula">
-                    <img src="img/posters-cartelera-web/el-corazon-de-la-bestia_posterpreview.jpg" alt="El corazón de la bestia" width="290" height="422">
+                    <img src="img/posters-cartelera-web/el-corazon-de-la-bestia_posterpreview.jpg"
+                        alt="El corazón de la bestia" width="290" height="422">
                     <div class="info-pelicula">
                         <h3>EL CORAZÓN DE LA BESTIA</h3>
                         <p>2D - 3D</p>
@@ -633,9 +841,110 @@
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>ACCIÓN</p>
-                        <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
-                        <!-- acá, para no hacer 234892 html se puede hacer lo de las ventanas emergentes, pero no sé, por ahora quedará así. -->
+                        <button type="button" class="btn-horarios" popovertarget="modal-el-corazon-de-la-bestia">
+                            VER HORARIOS
+                        </button>
+                    </div>
 
+                    <!-- ventana emergente -->
+                    <div id="modal-el-corazon-de-la-bestia" class="modal-pelicula" popover="auto">
+                        <div class="modal-contenedor-interno">
+                            <!-- Botón para cerrar la ventana -->
+                            <button class="btn-cerrar" popovertarget="modal-el-corazon-de-la-bestia"
+                                popovertargetaction="hide"> X
+                            </button>
+                            <!-- info. película -->
+                            <section class="modal-superior">
+                                <div class="modal-poster">
+                                    <img src="img/posters-cartelera-vent-emerg/el-corazon-de-la-bestia.jpg"
+                                        alt="El corazón de la bestia" width="600" height="900">
+                                </div>
+                                <div class="modal-datos">
+                                    <h2>EL CORAZÓN DE LA BESTIA</h2>
+                                    <p class="sinopsis">Un drama intenso y desgarrador sobre la supervivencia humana, la
+                                        lealtad y los instintos más salvajes empujados al límite de la razón.
+                                    </p>
+                                    <ul class="ficha-tecnica">
+                                        <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                        <li><strong>DURACIÓN:</strong> 115 min.</li>
+                                        <li><strong>GÉNERO:</strong> ACCIÓN</li>
+                                        <li><strong>DIRECTOR:</strong> Alonso Cuarón</li>
+                                    </ul>
+                                    <div class="modal-trailer">
+                                        <iframe src="https://www.youtube.com/embed/GaMmw2t9g24" width="540" height="340"
+                                            title="Tráiler de El corazón de la bestia" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- días y horarios -->
+                            <section class="modal-inferior">
+                                <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                <!-- días -->
+                                <div class="selector-dias">
+                                    <input type="checkbox" id="jueves" class="check-dia">
+                                    <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+                                    <input type="checkbox" id="viernes" class="check-dia">
+                                    <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+                                    <input type="checkbox" id="sabado" class="check-dia">
+                                    <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+                                    <input type="checkbox" id="domingo" class="check-dia">
+                                    <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+                                    <input type="checkbox" id="lunes" class="check-dia">
+                                    <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+                                    <input type="checkbox" id="martes" class="check-dia">
+                                    <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+                                </div>
+
+                                <!-- formato y horarios -->
+                                <div class="selector-horarios">
+                                    <h4>2D CASTELLANO</h4>
+                                    <div class="fila-horas">
+                                        <input type="checkbox" id="hora12" class="check-hora">
+                                        <label for="hora12" class="btn-hora">12.00 h</label>
+
+                                        <input type="checkbox" id="hora1430" class="check-hora">
+                                        <label for="hora1430" class="btn-hora">14.30 h</label>
+
+                                        <input type="checkbox" id="hora16" class="check-hora">
+                                        <label for="hora16" class="btn-hora">16.00 h</label>
+
+                                        <input type="checkbox" id="hora18" class="check-hora">
+                                        <label for="hora18" class="btn-hora">18.00 h</label>
+
+                                        <input type="checkbox" id="hora2030" class="check-hora">
+                                        <label for="hora2030" class="btn-hora">20.30 h</label>
+                                    </div>
+
+                                    <h4>2D SUBTITULADA</h4>
+                                    <div class="fila-horas">
+
+                                        <input type="checkbox" id="hora1230" class="check-hora">
+                                        <label for="hora1230" class="btn-hora">12.30 h</label>
+
+                                        <input type="checkbox" id="hora15" class="check-hora">
+                                        <label for="hora15" class="btn-hora">15.00 h</label>
+
+                                        <input type="checkbox" id="hora1615" class="check-hora">
+                                        <label for="hora1615" class="btn-hora">16.15 h</label>
+
+                                        <input type="checkbox" id="hora1830" class="check-hora">
+                                        <label for="hora1830" class="btn-hora">18.30 h</label>
+
+                                        <input type="checkbox" id="hora20" class="check-hora">
+                                        <label for="hora20" class="btn-hora">20.00 h</label>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- botón comprá tus entradas -->
+                            <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                        </div>
                     </div>
 
                 </article>
@@ -651,11 +960,112 @@
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>TERROR</p>
-                        <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
-                        <!-- acá, para no hacer 234892 html se puede hacer lo de las ventanas emergentes, pero no sé, por ahora quedará así. -->
-
+                        <button type="button" class="btn-horarios" popovertarget="modal-insidious">
+                            VER HORARIOS
+                        </button>
                     </div>
 
+                    <!-- ventana emergente -->
+                    <div id="modal-insidious" class="modal-pelicula" popover="auto">
+                        <div class="modal-contenedor-interno">
+                            <!-- Botón para cerrar la ventana -->
+                            <button class="btn-cerrar" popovertarget="modal-insidious" popovertargetaction="hide"> X
+                            </button>
+
+                            <!-- info. película -->
+                            <section class="modal-superior">
+                                <div class="modal-poster">
+                                    <img src="img/posters-cartelera-vent-emerg/insidious.jpg" alt="Insidious"
+                                        width="600" height="900">
+                                </div>
+                                <div class="modal-datos">
+                                    <h2>INSIDIOUS</h2>
+                                    <p class="sinopsis">Una familia descubre que oscuros espíritus acechan a su hijo,
+                                        quien ha caído en un coma inexplicable que lo conecta con un plano astral
+                                        aterrador.
+                                    </p>
+                                    <ul class="ficha-tecnica">
+                                        <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                        <li><strong>DURACIÓN:</strong> 103 min.</li>
+                                        <li><strong>GÉNERO:</strong> TERROR</li>
+                                        <li><strong>DIRECTOR:</strong> James Wan</li>
+                                    </ul>
+                                    <div class="modal-trailer">
+                                        <iframe src="https://www.youtube.com/embed/jgagTebSZrM" width="540" height="340"
+                                            title="Tráiler de Insidious" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- días y horarios -->
+                            <section class="modal-inferior">
+                                <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                <!-- días -->
+                                <div class="selector-dias">
+                                    <input type="checkbox" id="jueves" class="check-dia">
+                                    <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+                                    <input type="checkbox" id="viernes" class="check-dia">
+                                    <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+                                    <input type="checkbox" id="sabado" class="check-dia">
+                                    <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+                                    <input type="checkbox" id="domingo" class="check-dia">
+                                    <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+                                    <input type="checkbox" id="lunes" class="check-dia">
+                                    <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+                                    <input type="checkbox" id="martes" class="check-dia">
+                                    <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+                                </div>
+
+                                <!-- formato y horarios -->
+                                <div class="selector-horarios">
+                                    <h4>2D CASTELLANO</h4>
+                                    <div class="fila-horas">
+                                        <input type="checkbox" id="hora12" class="check-hora">
+                                        <label for="hora12" class="btn-hora">12.00 h</label>
+
+                                        <input type="checkbox" id="hora1430" class="check-hora">
+                                        <label for="hora1430" class="btn-hora">14.30 h</label>
+
+                                        <input type="checkbox" id="hora16" class="check-hora">
+                                        <label for="hora16" class="btn-hora">16.00 h</label>
+
+                                        <input type="checkbox" id="hora18" class="check-hora">
+                                        <label for="hora18" class="btn-hora">18.00 h</label>
+
+                                        <input type="checkbox" id="hora2030" class="check-hora">
+                                        <label for="hora2030" class="btn-hora">20.30 h</label>
+                                    </div>
+
+                                    <h4>2D SUBTITULADA</h4>
+                                    <div class="fila-horas">
+
+                                        <input type="checkbox" id="hora1230" class="check-hora">
+                                        <label for="hora1230" class="btn-hora">12.30 h</label>
+
+                                        <input type="checkbox" id="hora15" class="check-hora">
+                                        <label for="hora15" class="btn-hora">15.00 h</label>
+
+                                        <input type="checkbox" id="hora1615" class="check-hora">
+                                        <label for="hora1615" class="btn-hora">16.15 h</label>
+
+                                        <input type="checkbox" id="hora1830" class="check-hora">
+                                        <label for="hora1830" class="btn-hora">18.30 h</label>
+
+                                        <input type="checkbox" id="hora20" class="check-hora">
+                                        <label for="hora20" class="btn-hora">20.00 h</label>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- botón comprá tus entradas -->
+                            <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="pelicula">
@@ -669,9 +1079,111 @@
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>INFANTIL</p>
-                        <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
-                        <!-- acá, para no hacer 234892 html se puede hacer lo de las ventanas emergentes, pero no sé, por ahora quedará así. -->
+                        <button type="button" class="btn-horarios" popovertarget="modal-paw-patrol-dino">
+                            VER HORARIOS
+                        </button>
+                    </div>
 
+                    <!-- ventana emergente -->
+                    <div id="modal-paw-patrol-dino" class="modal-pelicula" popover="auto">
+                        <div class="modal-contenedor-interno">
+                            <!-- Botón para cerrar la ventana -->
+                            <button class="btn-cerrar" popovertarget="modal-paw-patrol-dino" popovertargetaction="hide">
+                                X
+                            </button>
+
+                            <!-- info. película -->
+                            <section class="modal-superior">
+                                <div class="modal-poster">
+                                    <img src="img/posters-cartelera-vent-emerg/paw-patrol-la-dino-pelicula.jpg"
+                                        alt="Paw Patrol La dino película" width="600" height="900">
+                                </div>
+                                <div class="modal-datos">
+                                    <h2>PAW PATROL: LA DINO PELÍCULA</h2>
+                                    <p class="sinopsis">Los valientes cachorros viajan a la prehistórica Tierra de los
+                                        Dinosaurios para una nueva y gigantesca misión de rescate perruno.
+                                    </p>
+                                    <ul class="ficha-tecnica">
+                                        <li><strong>FORMATO:</strong> 2D </li>
+                                        <li><strong>DURACIÓN:</strong> 88 min.</li>
+                                        <li><strong>GÉNERO:</strong> TERROR</li>
+                                        <li><strong>DIRECTOR:</strong> Cal Brunker</li>
+                                    </ul>
+                                    <div class="modal-trailer">
+                                        <iframe src="https://www.youtube.com/embed/JX_Lz8qrijgjgagTebSZrM" width="540"
+                                            height="340" title="Tráiler de Paw Patrol La dino película" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- días y horarios -->
+                            <section class="modal-inferior">
+                                <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                <!-- días -->
+                                <div class="selector-dias">
+                                    <input type="checkbox" id="jueves" class="check-dia">
+                                    <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+                                    <input type="checkbox" id="viernes" class="check-dia">
+                                    <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+                                    <input type="checkbox" id="sabado" class="check-dia">
+                                    <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+                                    <input type="checkbox" id="domingo" class="check-dia">
+                                    <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+                                    <input type="checkbox" id="lunes" class="check-dia">
+                                    <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+                                    <input type="checkbox" id="martes" class="check-dia">
+                                    <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+                                </div>
+
+                                <!-- formato y horarios -->
+                                <div class="selector-horarios">
+                                    <h4>2D CASTELLANO</h4>
+                                    <div class="fila-horas">
+                                        <input type="checkbox" id="hora12" class="check-hora">
+                                        <label for="hora12" class="btn-hora">12.00 h</label>
+
+                                        <input type="checkbox" id="hora1430" class="check-hora">
+                                        <label for="hora1430" class="btn-hora">14.30 h</label>
+
+                                        <input type="checkbox" id="hora16" class="check-hora">
+                                        <label for="hora16" class="btn-hora">16.00 h</label>
+
+                                        <input type="checkbox" id="hora18" class="check-hora">
+                                        <label for="hora18" class="btn-hora">18.00 h</label>
+
+                                        <input type="checkbox" id="hora2030" class="check-hora">
+                                        <label for="hora2030" class="btn-hora">20.30 h</label>
+                                    </div>
+
+                                    <h4>2D SUBTITULADA</h4>
+                                    <div class="fila-horas">
+
+                                        <input type="checkbox" id="hora1230" class="check-hora">
+                                        <label for="hora1230" class="btn-hora">12.30 h</label>
+
+                                        <input type="checkbox" id="hora15" class="check-hora">
+                                        <label for="hora15" class="btn-hora">15.00 h</label>
+
+                                        <input type="checkbox" id="hora1615" class="check-hora">
+                                        <label for="hora1615" class="btn-hora">16.15 h</label>
+
+                                        <input type="checkbox" id="hora1830" class="check-hora">
+                                        <label for="hora1830" class="btn-hora">18.30 h</label>
+
+                                        <input type="checkbox" id="hora20" class="check-hora">
+                                        <label for="hora20" class="btn-hora">20.00 h</label>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- botón comprá tus entradas -->
+                            <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                        </div>
                     </div>
 
                 </article>
@@ -687,9 +1199,112 @@
                     <!-- pop up -->
                     <div class="popup-pelicula">
                         <p>COMEDIA ROMÁNTICA</p>
-                        <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
-                        <!-- acá, para no hacer 234892 html se puede hacer lo de las ventanas emergentes, pero no sé, por ahora quedará así. -->
+                        <button type="button" class="btn-horarios" popovertarget="modal-yo-narciso">
+                            VER HORARIOS
+                        </button>
+                    </div>
 
+                    <!-- ventana emergente -->
+                    <div id="modal-yo-narciso" class="modal-pelicula" popover="auto">
+                        <div class="modal-contenedor-interno">
+                            <!-- Botón para cerrar la ventana -->
+                            <button class="btn-cerrar" popovertarget="modal-yo-narciso" popovertargetaction="hide">
+                                X
+                            </button>
+
+                            <!-- info. película -->
+                            <section class="modal-superior">
+                                <div class="modal-poster">
+                                    <img src="img/posters-cartelera-vent-emerg/yo-narciso.jpg" alt="Yo Narciso"
+                                        width="600" height="900">
+                                </div>
+                                <div class="modal-datos">
+                                    <h2>YO NARCISO</h2>
+                                    <p class="sinopsis">Una comedia satírica sobre el ego y las relaciones, donde un
+                                        hombre obsesionado consigo mismo debe aprender a registrar la existencia de los
+                                        demás.
+                                    </p>
+                                    <ul class="ficha-tecnica">
+                                        <li><strong>FORMATO:</strong> 2D </li>
+                                        <li><strong>DURACIÓN:</strong> 97 min.</li>
+                                        <li><strong>GÉNERO:</strong> COMEDIA ROMÁNTICA</li>
+                                        <li><strong>DIRECTOR:</strong> Ariel Winograd</li>
+                                    </ul>
+                                    <div class="modal-trailer">
+                                        <iframe src="https://www.youtube.com/embed/tv03AgZUBPY" width="540" height="340"
+                                            title="Tráiler de Yo narciso" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- días y horarios -->
+                            <section class="modal-inferior">
+                                <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                <!-- días -->
+                                <div class="selector-dias">
+                                    <input type="checkbox" id="jueves" class="check-dia">
+                                    <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+                                    <input type="checkbox" id="viernes" class="check-dia">
+                                    <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+                                    <input type="checkbox" id="sabado" class="check-dia">
+                                    <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+                                    <input type="checkbox" id="domingo" class="check-dia">
+                                    <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+                                    <input type="checkbox" id="lunes" class="check-dia">
+                                    <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+                                    <input type="checkbox" id="martes" class="check-dia">
+                                    <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+                                </div>
+
+                                <!-- formato y horarios -->
+                                <div class="selector-horarios">
+                                    <h4>2D CASTELLANO</h4>
+                                    <div class="fila-horas">
+                                        <input type="checkbox" id="hora12" class="check-hora">
+                                        <label for="hora12" class="btn-hora">12.00 h</label>
+
+                                        <input type="checkbox" id="hora1430" class="check-hora">
+                                        <label for="hora1430" class="btn-hora">14.30 h</label>
+
+                                        <input type="checkbox" id="hora16" class="check-hora">
+                                        <label for="hora16" class="btn-hora">16.00 h</label>
+
+                                        <input type="checkbox" id="hora18" class="check-hora">
+                                        <label for="hora18" class="btn-hora">18.00 h</label>
+
+                                        <input type="checkbox" id="hora2030" class="check-hora">
+                                        <label for="hora2030" class="btn-hora">20.30 h</label>
+                                    </div>
+
+                                    <h4>2D SUBTITULADA</h4>
+                                    <div class="fila-horas">
+
+                                        <input type="checkbox" id="hora1230" class="check-hora">
+                                        <label for="hora1230" class="btn-hora">12.30 h</label>
+
+                                        <input type="checkbox" id="hora15" class="check-hora">
+                                        <label for="hora15" class="btn-hora">15.00 h</label>
+
+                                        <input type="checkbox" id="hora1615" class="check-hora">
+                                        <label for="hora1615" class="btn-hora">16.15 h</label>
+
+                                        <input type="checkbox" id="hora1830" class="check-hora">
+                                        <label for="hora1830" class="btn-hora">18.30 h</label>
+
+                                        <input type="checkbox" id="hora20" class="check-hora">
+                                        <label for="hora20" class="btn-hora">20.00 h</label>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- botón comprá tus entradas -->
+                            <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                        </div>
                     </div>
 
                 </article>
@@ -711,25 +1326,261 @@
                                 alt="Verity: La sombra de un engaño" width="290" height="422">
                             <div class="info-pelicula">
                                 <h3>VERITY: LA SOMBRA DE UN ENGAÑO</h3>
-                                <p>2D - 3D</p>
+                                <p>2D</p>
                             </div>
+
+                            <!-- pop up -->
                             <div class="popup-pelicula">
-                                <p>THRILLER</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <p>SUSPENSO</p>
+                                <button type="button" class="btn-horarios" popovertarget="modal-verity">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+                            <!-- ventana emergente -->
+                            <div id="modal-verity" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-verity" popovertargetaction="hide">
+                                        X
+                                    </button>
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/verity.jpg" alt="Verity"
+                                                width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>VERITY: LA SOMBRA DE UN ENGAÑO</h2>
+                                            <p class="sinopsis">Una escritora descubre un oscuro manuscrito que revela
+                                                verdades perturbadoras y mortales sobre la extraña familia para la que
+                                                trabaja.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                                <li><strong>DURACIÓN:</strong> 118 min.</li>
+                                                <li><strong>GÉNERO:</strong> SUSPENSO</li>
+                                                <li><strong>DIRECTOR:</strong> David Fincher</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/2AckZubjDiU" width="540"
+                                                    height="340" title="Tráiler de Verity" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+                                        </div>
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
                         </article>
 
                         <article class="pelicula">
-                            <img src="img/posters-cartelera-web/el-corazon-de-la-bestia_posterpreview.jpg"
-                                alt="Vertigo 2: Punto Muerto" width="290" height="422">
+                            <img src="img/posters-cartelera-web/vertigo_posterpreview.jpg" alt="Vertigo 2: Punto Muerto"
+                                width="290" height="422">
                             <div class="info-pelicula">
-                                <h3>VERTIGO 2: PUNTO MUERTO</h3>
+                                <h3>VÉRTIGO 2: PUNTO MUERTO</h3>
                                 <p>2D - 3D</p>
                             </div>
+                            <!-- pop up -->
                             <div class="popup-pelicula">
-                                <p>SUSPENSO</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <p>ACCIÓN</p>
+                                <button type="button" class="btn-horarios" popovertarget="modal-vertigo">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-vertigo" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-vertigo" popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/vertigo-2.jpg" alt="Vertigo"
+                                                width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>VÉRTIGO 2: PUNTO MUERTO</h2>
+                                            <p class="sinopsis">Un thriller de suspenso extremo donde los protagonistas
+                                                deberán enfrentar sus peores miedos psicológicos para sobrevivir al
+                                                vacío.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                                <li><strong>DURACIÓN:</strong> 122 min.</li>
+                                                <li><strong>GÉNERO:</strong> ACCIÓN</li>
+                                                <li><strong>DIRECTOR:</strong> Christopher McQuarrie</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/6ESEtbv0J8M" width="540"
+                                                    height="340" title="Tráiler de Vértigo 2" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
                         </article>
 
                         <article class="pelicula">
@@ -737,12 +1588,141 @@
                                 alt="Escondida en mi cabeza" width="290" height="422">
                             <div class="info-pelicula">
                                 <h3>ESCONDIDA EN MI CABEZA</h3>
-                                <p>2D - 3D</p>
+                                <p>2D</p>
                             </div>
+                            <!-- pop up -->
                             <div class="popup-pelicula">
                                 <p>COMEDIA</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <button type="button" class="btn-horarios" popovertarget="modal-escondida-en-mi-cabeza">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-escondida-en-mi-cabeza" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-escondida-en-mi-cabeza"
+                                        popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/escondida-en-mi-cabeza.jpg"
+                                                alt="Escondida en mi cabeza" width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>ESCONDIDA EN MI CABEZA</h2>
+                                            <p class="sinopsis">Tras despertar de un coma de 14 años, Erni descubre que
+                                                una inversión en criptomonedas que realizó en el pasado ahora vale
+                                                millones. El único problema es que no logra recordar la contraseña para
+                                                acceder a su nueva fortuna.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D </li>
+                                                <li><strong>DURACIÓN:</strong> 105 min.</li>
+                                                <li><strong>GÉNERO:</strong> COMEDIA ROMÁNTICA</li>
+                                                <li><strong>DIRECTOR:</strong> Lucas Vivo García Lagos</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/3kFtLMkRL04" width="540"
+                                                    height="340" title="Tráiler de Escondida en mi cabeza"
+                                                    allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
                         </article>
 
                         <article class="pelicula">
@@ -752,10 +1732,142 @@
                                 <h3>LA ISLA OLVIDADA</h3>
                                 <p>2D - 3D</p>
                             </div>
+
+
+                            <!-- pop up -->
                             <div class="popup-pelicula">
-                                <p>AVENTURA</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <p>INFANTIL</p>
+                                <button type="button" class="btn-horarios" popovertarget="modal-la-isla-olvidada">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-la-isla-olvidada" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-la-isla-olvidada"
+                                        popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/la-isla-olvidada.jpg"
+                                                alt="Yo Narciso" width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>LA ISLA OLVIDADA</h2>
+                                            <p class="sinopsis">Un grupo de jóvenes llega accidentalmente a una isla que
+                                                no aparece en los mapas, descubriendo secretos ancestrales que debieron
+                                                quedar enterrados.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                                <li><strong>DURACIÓN:</strong> 110 min.</li>
+                                                <li><strong>GÉNERO:</strong> INFANTIL</li>
+                                                <li><strong>DIRECTOR:</strong> J.J. Abrams</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/JMvw0PVqbgs" width="540"
+                                                    height="340" title="Tráiler de La Isla Olvidada" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
+
+
+
                         </article>
 
                         <article class="pelicula">
@@ -765,10 +1877,144 @@
                                 <h3>RELAJADAS Y MUY PELIGROSAS</h3>
                                 <p>2D</p>
                             </div>
+
+
+                            <!-- pop up -->
                             <div class="popup-pelicula">
                                 <p>COMEDIA</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <button type="button" class="btn-horarios"
+                                    popovertarget="modal-relajadas-y-muy-peligrosas">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-relajadas-y-muy-peligrosas" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-relajadas-y-muy-peligrosas"
+                                        popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/relajadas-y-muy-peligrosas.jpg"
+                                                alt="Relajadas y muy peligrosas" width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>RELAJADAS Y MUY PELIGROSAS</h2>
+                                            <p class="sinopsis">Una comedia de enredos donde un grupo de amigas en
+                                                vacaciones se ve sorpresivamente envuelto en una arriesgada misión de
+                                                espionaje internacional.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D </li>
+                                                <li><strong>DURACIÓN:</strong> 92 min.</li>
+                                                <li><strong>GÉNERO:</strong> COMEDIA</li>
+                                                <li><strong>DIRECTOR:</strong> Paul Feig</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/https://www.B82XrAHS034"
+                                                    width="540" height="340"
+                                                    title="Tráiler de Relajadas y muy peligrosas" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
+
+
+
                         </article>
 
                         <!-- CUARTA FILA (DESPLEGADA) -->
@@ -780,10 +2026,140 @@
                                 <h3>TOY STORY 5</h3>
                                 <p>2D - 3D</p>
                             </div>
+
+                            <!-- pop up -->
                             <div class="popup-pelicula">
-                                <p>INFANTIL</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <p>ANIMACIÓN</p>
+                                <button type="button" class="btn-horarios" popovertarget="modal-toy-story-5">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-toy-story-5" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-toy-story-5"
+                                        popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/toy-story-5.jpg"
+                                                alt="Toy Story 5" width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>TOY STORY 5</h2>
+                                            <p class="sinopsis">Woody, Buzz y el resto del grupo se embarcan en una
+                                                nueva y emotiva aventura que pondrá a prueba su lealtad y el verdadero
+                                                significado de ser un juguete.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D - 3D</li>
+                                                <li><strong>DURACIÓN:</strong> 100 min.</li>
+                                                <li><strong>GÉNERO:</strong> ANIMACIÓN</li>
+                                                <li><strong>DIRECTOR:</strong> Josh Cooley</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/RkDs1RircNw" width="540"
+                                                    height="340" title="Tráiler de Toy Story 5" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
+
+
                         </article>
 
                         <article class="pelicula">
@@ -793,10 +2169,140 @@
                                 <h3>MINIONS Y MONSTRUOS</h3>
                                 <p>2D - 3D</p>
                             </div>
+
+                            <!-- pop up -->
                             <div class="popup-pelicula">
-                                <p>INFANTIL</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <p>ANIMACIÓN</p>
+                                <button type="button" class="btn-horarios" popovertarget="modal-minions">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-minions" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-minions" popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/minions-y-monstruos.jpg"
+                                                alt="Minions y Monstruos" width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>MINIONS Y MONSTRUOS</h2>
+                                            <p class="sinopsis">Los divertidos Minions desatan un caos desopilante al
+                                                intentar ayudar a un grupo de monstruos legendarios que se encuentran en
+                                                apuros.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D - 3D </li>
+                                                <li><strong>DURACIÓN:</strong> 90 min.</li>
+                                                <li><strong>GÉNERO:</strong> ANIMACIÓN</li>
+                                                <li><strong>DIRECTOR:</strong> Kyle Balda</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/Pp91fIfUrkM" width="540"
+                                                    height="340" title="Tráiler de Minions y Monstruos" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
+
+
+
                         </article>
 
                         <article class="pelicula">
@@ -806,10 +2312,142 @@
                                 <h3>HANGAR ROJO</h3>
                                 <p>2D - 3D</p>
                             </div>
+
+
+                            <!-- pop up -->
                             <div class="popup-pelicula">
-                                <p>DRAMA</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <p>ACCIÓN</p>
+                                <button type="button" class="btn-horarios" popovertarget="modal-hangar-rojo">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-hangar-rojo" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-hangar-rojo"
+                                        popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/hangar-rojo.jpg"
+                                                alt="Hangar Rojo" width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>HANGAR ROJO</h2>
+                                            <p class="sinopsis">Un thriller de ciencia ficción ambientado en una base
+                                                militar secreta, donde un descubrimiento alienígena amenaza la seguridad
+                                                global de forma inminente.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D - 3D </li>
+                                                <li><strong>DURACIÓN:</strong> 125 min.</li>
+                                                <li><strong>GÉNERO:</strong> ACCIÓN</li>
+                                                <li><strong>DIRECTOR:</strong> Ridley Scott</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/6u5Zz8OiSIU" width="540"
+                                                    height="340" title="Tráiler de Hangar Rojo" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
+
+
+
                         </article>
 
                         <article class="pelicula">
@@ -819,10 +2457,143 @@
                                 <h3>GUARDIANES DEL MUSEO 2</h3>
                                 <p>2D</p>
                             </div>
+
+
+                            <!-- pop up -->
                             <div class="popup-pelicula">
                                 <p>INFANTIL</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <button type="button" class="btn-horarios" popovertarget="modal-guardianes-del-museo">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-guardianes-del-museo" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-yguardianes-del-museo"
+                                        popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/guardianes-del-museo-2.jpg"
+                                                alt="Guardianes del museo" width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>GUARDIANES DEL MUSEO 2</h2>
+                                            <p class="sinopsis">Los intrépidos animales guardianes deben proteger nuevas
+                                                reliquias mágicas que cobran vida misteriosamente durante la noche en
+                                                las oscuras salas del museo.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D </li>
+                                                <li><strong>DURACIÓN:</strong> 95 min.</li>
+                                                <li><strong>GÉNERO:</strong> INFANTIL</li>
+                                                <li><strong>DIRECTOR:</strong> Shawn levy</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/FPPTZUAWiD4" width="540"
+                                                    height="340" title="Tráiler de Guardianes del museo 2"
+                                                    allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
+
+
+
                         </article>
 
                         <article class="pelicula">
@@ -832,10 +2603,139 @@
                                 <h3>LA INVITACIÓN</h3>
                                 <p>2D</p>
                             </div>
+
+
+                            <!-- pop up -->
                             <div class="popup-pelicula">
-                                <p>COMEDIA</p>
-                                <a href="horarios.html" class="btn-horarios">VER HORARIOS</a>
+                                <p>SUSPENSO</p>
+                                <button type="button" class="btn-horarios" popovertarget="modal-la-invitacion">
+                                    VER HORARIOS
+                                </button>
                             </div>
+
+
+                            <!-- ventana emergente -->
+                            <div id="modal-la-invitacion" class="modal-pelicula" popover="auto">
+                                <div class="modal-contenedor-interno">
+                                    <!-- Botón para cerrar la ventana -->
+                                    <button class="btn-cerrar" popovertarget="modal-la-invitacion"
+                                        popovertargetaction="hide">
+                                        X
+                                    </button>
+
+
+                                    <!-- info. película -->
+                                    <section class="modal-superior">
+                                        <div class="modal-poster">
+                                            <img src="img/posters-cartelera-vent-emerg/la-invitacion.jpg"
+                                                alt="La invitación" width="600" height="900">
+                                        </div>
+                                        <div class="modal-datos">
+                                            <h2>LA INVITACIÓN</h2>
+                                            <p class="sinopsis">Una cena de reencuentro aparentemente normal entre
+                                                viejos amigos se transforma rápidamente en una noche llena de paranoia,
+                                                sospechas y terror absoluto.
+                                            </p>
+                                            <ul class="ficha-tecnica">
+                                                <li><strong>FORMATO:</strong> 2D </li>
+                                                <li><strong>DURACIÓN:</strong> 108 min.</li>
+                                                <li><strong>GÉNERO:</strong> SUSPENSO</li>
+                                                <li><strong>DIRECTOR:</strong> Karyn Kusama</li>
+                                            </ul>
+                                            <div class="modal-trailer">
+                                                <iframe src="https://www.youtube.com/embed/zeljHwqM0nw" width="540"
+                                                    height="340" title="Tráiler de La invitación" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- días y horarios -->
+                                    <section class="modal-inferior">
+                                        <h3>DÍAS, HORARIOS Y FORMATOS</h3>
+                                        <!-- días -->
+                                        <div class="selector-dias">
+                                            <input type="checkbox" id="jueves" class="check-dia">
+                                            <label for="jueves" class="btn-dia">JUEVES<br>01/10</label>
+
+
+                                            <input type="checkbox" id="viernes" class="check-dia">
+                                            <label for="viernes" class="btn-dia">VIERNES<br>02/10</label>
+
+
+                                            <input type="checkbox" id="sabado" class="check-dia">
+                                            <label for="sabado" class="btn-dia">SÁBADO<br>03/10</label>
+
+
+                                            <input type="checkbox" id="domingo" class="check-dia">
+                                            <label for="domingo" class="btn-dia">DOMINGO<br>04/10</label>
+
+
+                                            <input type="checkbox" id="lunes" class="check-dia">
+                                            <label for="lunes" class="btn-dia">LUNES<br>05/10</label>
+
+
+                                            <input type="checkbox" id="martes" class="check-dia">
+                                            <label for="martes" class="btn-dia">MARTES<br>06/10</label>
+
+
+                                        </div>
+
+
+                                        <!-- formato y horarios -->
+                                        <div class="selector-horarios">
+                                            <h4>2D CASTELLANO</h4>
+                                            <div class="fila-horas">
+                                                <input type="checkbox" id="hora12" class="check-hora">
+                                                <label for="hora12" class="btn-hora">12.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1430" class="check-hora">
+                                                <label for="hora1430" class="btn-hora">14.30 h</label>
+
+
+                                                <input type="checkbox" id="hora16" class="check-hora">
+                                                <label for="hora16" class="btn-hora">16.00 h</label>
+
+
+                                                <input type="checkbox" id="hora18" class="check-hora">
+                                                <label for="hora18" class="btn-hora">18.00 h</label>
+
+
+                                                <input type="checkbox" id="hora2030" class="check-hora">
+                                                <label for="hora2030" class="btn-hora">20.30 h</label>
+                                            </div>
+
+
+                                            <h4>2D SUBTITULADA</h4>
+                                            <div class="fila-horas">
+
+
+                                                <input type="checkbox" id="hora1230" class="check-hora">
+                                                <label for="hora1230" class="btn-hora">12.30 h</label>
+
+
+                                                <input type="checkbox" id="hora15" class="check-hora">
+                                                <label for="hora15" class="btn-hora">15.00 h</label>
+
+
+                                                <input type="checkbox" id="hora1615" class="check-hora">
+                                                <label for="hora1615" class="btn-hora">16.15 h</label>
+
+
+                                                <input type="checkbox" id="hora1830" class="check-hora">
+                                                <label for="hora1830" class="btn-hora">18.30 h</label>
+
+
+                                                <input type="checkbox" id="hora20" class="check-hora">
+                                                <label for="hora20" class="btn-hora">20.00 h</label>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- botón comprá tus entradas -->
+                                    <a href="entradas.html" class="btn-comprar">Comprá tus entradas</a>
+                                </div>
+                            </div>
+
                         </article>
 
                     </div>
@@ -861,12 +2761,14 @@
 
             <!-- carrusel de tarjetas -->
             <div class="preestrenos-carrusel">
-                <button class="flecha-preestrenos anterior-preestrenos" id="preestrenos-anterior" aria-label="Películas anteriores">&#10094;</button>
+                <button class="flecha-preestrenos anterior-preestrenos" id="preestrenos-anterior"
+                    aria-label="Películas anteriores">&#10094;</button>
                 <div class="preestrenos-ventana">
                     <div class="preestrenos-pista" id="preestrenos-pista">
                     </div>
                 </div>
-                <button class="flecha-preestrenos siguiente-preestrenos" id="preestrenos-siguiente" aria-label="Películas siguientes">&#10095;</button>
+                <button class="flecha-preestrenos siguiente-preestrenos" id="preestrenos-siguiente"
+                    aria-label="Películas siguientes">&#10095;</button>
             </div>
         </section>
     </main>
@@ -935,4 +2837,5 @@
 
 </body>
 <script src="interacciones.js"></script>
+
 </html>
