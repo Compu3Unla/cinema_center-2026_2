@@ -516,15 +516,39 @@ footer {
 /* LOS COMBOS */
 
 .tarjeta-combo {
-
-    width: 50%;
+    width: 100%;
     min-width: 0;
     box-sizing: border-box;
-    padding: 20px 40px 25px;
+
+    padding: 22px;
+
     border: 1.5px solid #000000;
     border-radius: 25px;
 
+    display: flex;
+    flex-direction: column;
 }
+
+.grilla-combos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 19px;
+
+    width: 100%;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.grilla-coleccionables {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 19px;
+
+    width: 100%;
+}
+
 
 
 
@@ -557,6 +581,7 @@ footer {
     line-height: 1.3;
     color: #000000;
     margin: 0 0 15px;
+    width: 120px;
 
 }
 
@@ -637,4 +662,49 @@ footer {
     font-size: 14px;
     font-weight: 700;
 
+}
+
+/* BOTONES DENTRO DEL CANDY */
+
+.botones-navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 25px auto 35px;
+}
+
+.boton-volver,
+.boton-continuar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 40px;
+
+    border-radius: 30px;
+
+    background-color: #A30000;
+
+    color: #FFFFFF;
+
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    overflow: hidden;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.boton-volver:hover,
+.boton-continuar:hover {
+    background-color: #1555D9;
 }
