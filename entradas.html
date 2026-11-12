@@ -16,10 +16,254 @@
     <header>
         <img src="img/svg/logo.svg/logo_v1.svg" alt="logo-cinemacenter" width="323" height="34">
         <nav>
+            <a href="index.html" class="boton-header">CARTELERA</a>
+            <a href="#pre-estrenos" class="boton-header">PRE ESTRENOS</a>
             <a href="candy.html" class="boton-header">CANDY</a>
-            <a href="index.html" class="boton-header"> <img src="img/svg/inicio.svg" alt="boton-inicio" width="15" height="15"></a>
+            <button class="boton-header" popovertarget="popup-login">
+                <img src="img/svg/usuario.svg" alt="Iniciar sesión" width="15" height="15">
+            </button>
         </nav>
     </header>
+
+    <main class="main-seleccion-entradas">
+        <div class="contenedor-entradas">
+
+            <div class="titulares">
+                <img src="img/svg/estrella_titulares.svg" alt="estrella-titulares" width="30" height="30">
+                <h2>ELEGÍ EL TIPO DE ENTRADA</h2>
+            </div>
+
+            <!-- GENERALES -->
+            <section class="grupo-entradas">
+                <h2 class="subtitulo-categoria">GENERALES</h2>
+                <div class="grid-tarjetas">
+
+                    <!-- Entrada General -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="icono-tipo-entrada">
+                                <img src="img/bancos/icono-ticket.png" alt="icono Ticket" width="241p" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>Entrada General</h3>
+                                <p class="precio">$15.000</p>
+                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Menores de 12 años -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="icono-tipo-entrada">
+                                <img src="img/bancos/icono-ticket.png" alt="icono Ticket" width="241" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>Menores de 12 años</h3>
+                                <p class="precio">$15.000</p>
+                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ENTRADAS 50% OFF -->
+            <section class="grupo-entradas">
+                <h2 class="subtitulo-categoria">ENTRADAS 50% OFF</h2>
+                <div class="grid-tarjetas">
+
+                    <!-- Amex -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="logo-banco">
+                                <img src="img/bancos/american-express-01.png" alt="icono Ticket" width="241" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>Amex</h3>
+                                <p class="precio">$9.400</p>
+                                <p class="impuestos">Precio sin impuestos nacionales: $7.176</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Pase Cultural -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="logo-banco">
+                                <img src="img/bancos/pase-cultural-01.png" alt="icono Ticket" width="241p" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>Pase Cultural</h3>
+                                <p class="precio">$9.400</p>
+                                <p class="impuestos">Precio sin impuestos nacionales: $7.176</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PROMOCIONES 2X1 -->
+            <section class="grupo-entradas">
+                <h2 class="subtitulo-categoria">PROMOCIONES 2X1</h2>
+                <div class="grid-tarjetas">
+
+                    <!-- BBVA -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="logo-banco">
+                                <img src="img/bancos/bbva-01.png" alt="icono Ticket" width="241p" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>BBVA</h3>
+                                <p class="precio">$18.800</p>
+                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Personal Pay -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="logo-banco">
+                                <img src="img/bancos/personal-pay-01.png" alt="icono Ticket" width="241p" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>Personal Pay</h3>
+                                <p class="precio">$18.800</p>
+                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Naranja X -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="logo-banco">
+                                <img src="img/bancos/naranja-x-01.png" alt="icono Ticket" width="241p" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>Naranja X</h3>
+                                <p class="precio">$18.800</p>
+                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                    <!-- La Nación -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="logo-banco">
+                                <img src="img/bancos/la-nacion-01.png" alt="icono Ticket" width="241p" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>La Nación</h3>
+                                <p class="precio">$18.800</p>
+                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ENTRADAS ESPECIALES -->
+            <section class="grupo-entradas">
+                <h2 class="subtitulo-categoria">ENTRADAS ESPECIALES</h2>
+                <div class="grid-tarjetas">
+
+                    <!-- Entrada Especial -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="icono-tipo-entrada">
+                                <img src="img/bancos/icono-ticket.png" alt="icono Ticket" width="241p" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>Entrada Especial</h3>
+                                <p class="precio">$15.000</p>
+                                <p class="impuestos">Precio sin impuestos nacionales:</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Mayores de 60 años -->
+                    <div class="tarjeta-entrada">
+                        <div class="info-entrada">
+                            <div class="icono-tipo-entrada">
+                                <img src="img/bancos/icono-ticket.png" alt="icono Ticket" width="241p" height="180">
+                            </div>
+                            <div class="detalles-precio">
+                                <h3>Mayores de 60 años</h3>
+                                <p class="precio">$15.000</p>
+                                <p class="impuestos">Precio sin impuestos nacionales:</p>
+                            </div>
+                        </div>
+                        <div class="control-cantidad">
+                            <button class="btn-menos" type="button">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="btn-mas" type="button">+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- BOTONES DE ACCIÓN INFERIORES -->
+            <div class="contenedor-botones-accion">
+                <button class="btn-accion btn-volver" type="button"><a href="index.html">Volver</a></button>
+                <button class="btn-accion btn-seleccionar-butacas" type="button"><a href="#">Seleccionar butacas</a></button>
+            </div>
+
+        </div>
+    </main>
+
     <footer>
         <div>
             <img src="img/svg/logo.svg/logo_v3.svg" alt="Logo reducido" width="133" height="118">
@@ -32,12 +276,13 @@
 
                 <h3>REDES SOCIALES</h3>
                 <div class="footer-redes">
-                    <a href="https://www.facebook.com/CinemacenterArgentina?locale=es_LA" aria-label="Facebook"><img src="img/svg/logo_redes.svg/logo_facebook.svg"
-                            alt="Facebook" width="25" height="25"></a>
-                    <a href="https://www.instagram.com/cinemacenterarg/" aria-label="Instagram" width="25" height="25"><img
-                            src="img/svg/logo_redes.svg/logo_instagram.svg" alt="Instagram" width="25" height="25"></a>
-                    <a href="https://www.tiktok.com/@cinemacenterarg" aria-label="TikTok"><img src="img/svg/logo_redes.svg/logo_tiktok.svg" alt="TikTok"
-                            width="25" height="25"></a>
+                    <a href="https://www.facebook.com/CinemacenterArgentina?locale=es_LA" aria-label="Facebook"><img
+                            src="img/svg/logo_redes.svg/logo_facebook.svg" alt="Facebook" width="25" height="25"></a>
+                    <a href="https://www.instagram.com/cinemacenterarg/" aria-label="Instagram" width="25"
+                        height="25"><img src="img/svg/logo_redes.svg/logo_instagram.svg" alt="Instagram" width="25"
+                            height="25"></a>
+                    <a href="https://www.tiktok.com/@cinemacenterarg" aria-label="TikTok"><img
+                            src="img/svg/logo_redes.svg/logo_tiktok.svg" alt="TikTok" width="25" height="25"></a>
                 </div>
             </div>
 

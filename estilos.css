@@ -265,6 +265,7 @@ main {
     height: auto;
     object-fit: cover;
 }
+
 /* info pelis */
 
 .info-pelicula {
@@ -836,6 +837,7 @@ footer {
     max-width: 1400px;
     margin: 20px auto 40px;
 }
+
 /* CONTENEDOR DE LOS BANNERS */
 .contenedor-carrusel {
     position: relative;
@@ -844,6 +846,7 @@ footer {
     overflow: hidden;
     border-radius: 20px;
 }
+
 /* CADA BANNER */
 .banner {
     display: none;
@@ -853,9 +856,11 @@ footer {
     height: 100%;
     overflow: hidden;
 }
+
 .banner.activo {
     display: block;
 }
+
 /* IMAGEN DE FONDO */
 .imagen-banner {
     position: absolute;
@@ -872,13 +877,11 @@ footer {
 .degradado-banner {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        90deg,
-        #000000 0%,
-        #000000 40%,
-        rgba(0, 0, 0, 0.886) 48%,
-        transparent 75%
-    );
+    background: linear-gradient(90deg,
+            #000000 0%,
+            #000000 40%,
+            rgba(0, 0, 0, 0.886) 48%,
+            transparent 75%);
     z-index: 2;
 }
 
@@ -889,6 +892,7 @@ footer {
     z-index: 3;
     width: 50%;
 }
+
 /* TEXTO Y BOTÓN */
 .contenido-banner {
     position: absolute;
@@ -903,10 +907,12 @@ footer {
     box-sizing: border-box;
     color: var(--blanco);
 }
+
 .fecha-banner {
     font-size: 16px;
     margin-bottom: 30px;
 }
+
 .contenido-banner h1 {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 48px;
@@ -914,9 +920,11 @@ footer {
     line-height: 0.98;
     margin-bottom: 1px;
 }
-.mini-texto{
+
+.mini-texto {
     margin-bottom: 20px;
 }
+
 .boton-banner {
     display: inline-block;
     padding: 12px 25px;
@@ -932,6 +940,7 @@ footer {
 .boton-banner:hover {
     background-color: var(--azul);
 }
+
 /* FLECHAS EXTERNAS */
 .flecha-carrusel {
     display: flex;
@@ -948,10 +957,12 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .flecha-carrusel:hover {
     background-color: var(--rojo);
     color: var(--blanco);
 }
+
 /* ADAPTACIÓN A CELULARES */
 
 /* CARRUSEL PRE ESTRENOS */
@@ -985,11 +996,13 @@ footer {
     min-width: 0;
     height: auto;
 }
+
 /* POP-UP DE LAS TARJETAS */
 .preestrenos-pista .popup-pelicula {
     width: 100%;
     height: 100%;
 }
+
 /* FLECHAS */
 .flecha-preestrenos {
     display: flex;
@@ -1006,10 +1019,12 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .flecha-preestrenos:hover {
     background-color: var(--rojo);
     color: var(--blanco);
 }
+
 /* PUNTITOS */
 .preestrenos-puntos {
     display: flex;
@@ -1017,6 +1032,7 @@ footer {
     gap: 12px;
     margin: 20px 0 40px;
 }
+
 .punto-preestreno {
     width: 9px;
     height: 9px;
@@ -1026,6 +1042,210 @@ footer {
     background-color: var(--negro);
     cursor: pointer;
 }
+
 .punto-preestreno.activo {
     background-color: var(--rojo);
+}
+
+
+/* ESTILOS PARA LA SECCIÓN DE SELECCIÓN DE ENTRADAS */
+.main-seleccion-entradas {
+    background-color: var(--crema);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-entradas {
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Título principal */
+.titulo-seccion {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--negro);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icono-estrella {
+    color: var(--negro);
+}
+
+/* Subtítulos de categorías */
+.subtitulo-categoria {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--negro);
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.grupo-entradas {
+    margin-bottom: 35px;
+}
+
+/* Grilla de tarjetas (2 columnas) */
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Estilo de cada tarjeta blanca */
+.tarjeta-entrada {
+    background-color: var(--blanco);
+    border: 1px solid var(--negro);
+    border-radius: 8px;
+    width: 610px;
+    height: 222px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.info-entrada {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Contenedores de logos e iconos */
+.logo-banco,
+.icono-tipo-entrada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.logo-banco img,
+.icono-tipo-entrada img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Textos de precios */
+.detalles-precio h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--negro);
+    margin: 0 0 4px 0;
+}
+
+.detalles-precio .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--negro);
+    margin: 0 0 2px 0;
+}
+
+.detalles-precio .impuestos {
+    font-size: 11px;
+    color: #666;
+    margin: 0;
+}
+
+/* Controles de incremento y decremento numérico (-) 0 (+) */
+.control-cantidad {
+    display: flex;
+    align-items: center;
+    background-color: var(--rojo);
+    border-radius: 4px;
+    overflow: hidden;
+    height: 36px;
+}
+
+.control-cantidad button {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    width: 32px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.control-cantidad button:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.control-cantidad .cantidad {
+    color: var;
+    font-size: 15px;
+    font-weight: bold;
+    width: 28px;
+    text-align: center;
+}
+
+/* Contenedor de botones inferiores (Volver y Seleccionar butacas) */
+.contenedor-botones-accion {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.btn-accion {
+padding: 14px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--blanco); 
+    background-color: var(--rojo); 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: opacity 0.2s ease;
+}
+
+.btn-volver {
+    background-color: var(--rojo);
+    border-radius: 50px;
+    color: var(--blanco);
+}
+
+.btn-seleccionar-butacas {
+    background-color: var(--rojo);
+    border-radius: 50px;
+    color: var(--blanco);
+}
+
+.btn-accion:hover {
+    color: var(--blanco);
+    background-color: var(--azul);
+}
+
+.detalles-precio .precio {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--negro);
+    line-height: 1.1;
+    margin: 0 0 4px 0;
+}
+
+/* Adaptabilidad para pantallas más chicas */
+@media (max-width: 768px) {
+    .grid-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-botones-accion {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
