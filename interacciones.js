@@ -1,4 +1,4 @@
-// carruselete grande
+// CARRUSELETE GRANDE
 const banners = document.querySelectorAll(".banner");
 const botonAnterior = document.getElementById("anterior");
 const botonSiguiente = document.getElementById("siguiente");
@@ -33,7 +33,7 @@ botonAnterior.addEventListener("click", function() {
 });
 
 
-//carrusel de tarjetas
+//CARRUSEL DE TARJETAS
 
 const pistaPreestrenos = document.getElementById("preestrenos-pista");
 if (pistaPreestrenos) {
@@ -80,3 +80,36 @@ if (pistaPreestrenos) {
     window.addEventListener("resize", actualizarPreestrenos);
     actualizarPreestrenos();
 }
+
+// PANTALLA DE CARGA PARA LOS BOTONES VER HORARIOS
+
+const pantallaCarga = document.getElementById("pantallaCarga");
+const botonesHorarios = document.querySelectorAll(".btn-horarios");
+
+botonesHorarios.forEach(function(boton) {
+    boton.addEventListener("click", function(event) {
+        // Si es un botón que abre un modal
+        if (boton.tagName === "BUTTON") {
+            const idModal = boton.getAttribute("popovertarget");
+            const modal = document.getElementById(idModal);
+            // Si no encuentra el modal, no ejecuta la animación
+            if (!modal) return;
+            event.preventDefault();
+            pantallaCarga.classList.add("activa");
+            setTimeout(function() {
+                pantallaCarga.classList.remove("activa");
+                modal.showPopover();
+            }, 2000);
+        }
+        // Si es un enlace que lleva a horarios.html
+        else if (boton.tagName === "A") {
+            const destino = boton.getAttribute("href");
+            if (!destino) return;
+            event.preventDefault();
+            pantallaCarga.classList.add("activa");
+            setTimeout(function() {
+                window.location.href = destino;
+            }, 2000);
+        }
+    });
+});

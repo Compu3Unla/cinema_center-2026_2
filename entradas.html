@@ -25,243 +25,180 @@
         </nav>
     </header>
 
-    <main class="main-seleccion-entradas">
-        <div class="contenedor-entradas">
 
-            <div class="titulares">
-                <img src="img/svg/estrella_titulares.svg" alt="estrella-titulares" width="30" height="30">
-                <h2>ELEGÍ EL TIPO DE ENTRADA</h2>
-            </div>
-
-            <!-- GENERALES -->
-            <section class="grupo-entradas">
-                <h2 class="subtitulo-categoria">GENERALES</h2>
-                <div class="grid-tarjetas">
-
-                    <!-- Entrada General -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="icono-tipo-entrada">
-                                <img src="img/bancos/icono-ticket.png" alt="icono Ticket" width="241p" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>Entrada General</h3>
-                                <p class="precio">$15.000</p>
-                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
+    <main class="pagina-entradas">
+    <h1 class="titulo-entradas">★ELEGÍ EL TIPO DE ENTRADA</h1>
+    <!-- GENERALES -->
+    <section class="grupo-entradas">
+        <h2>GENERALES</h2>
+        <div class="grilla-entradas">
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/icono-ticket.png" alt="Entrada-general" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>Entrada General</h3>
+                    <p class="precio">$15.000</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales: $24.352</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
                     </div>
-
-                    <!-- Menores de 12 años -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="icono-tipo-entrada">
-                                <img src="img/bancos/icono-ticket.png" alt="icono Ticket" width="241" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>Menores de 12 años</h3>
-                                <p class="precio">$15.000</p>
-                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
-                    </div>
-
                 </div>
-            </section>
-
-            <!-- ENTRADAS 50% OFF -->
-            <section class="grupo-entradas">
-                <h2 class="subtitulo-categoria">ENTRADAS 50% OFF</h2>
-                <div class="grid-tarjetas">
-
-                    <!-- Amex -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="logo-banco">
-                                <img src="img/bancos/american-express-01.png" alt="icono Ticket" width="241" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>Amex</h3>
-                                <p class="precio">$9.400</p>
-                                <p class="impuestos">Precio sin impuestos nacionales: $7.176</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/icono-ticket.png" alt="Menores de 12 años" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>Menores de 12 años</h3>
+                    <p class="precio">$15.000</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales:</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
                     </div>
-
-                    <!-- Pase Cultural -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="logo-banco">
-                                <img src="img/bancos/pase-cultural-01.png" alt="icono Ticket" width="241p" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>Pase Cultural</h3>
-                                <p class="precio">$9.400</p>
-                                <p class="impuestos">Precio sin impuestos nacionales: $7.176</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
-                    </div>
-
                 </div>
-            </section>
-
-            <!-- PROMOCIONES 2X1 -->
-            <section class="grupo-entradas">
-                <h2 class="subtitulo-categoria">PROMOCIONES 2X1</h2>
-                <div class="grid-tarjetas">
-
-                    <!-- BBVA -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="logo-banco">
-                                <img src="img/bancos/bbva-01.png" alt="icono Ticket" width="241p" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>BBVA</h3>
-                                <p class="precio">$18.800</p>
-                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
-                    </div>
-
-                    <!-- Personal Pay -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="logo-banco">
-                                <img src="img/bancos/personal-pay-01.png" alt="icono Ticket" width="241p" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>Personal Pay</h3>
-                                <p class="precio">$18.800</p>
-                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
-                    </div>
-
-                    <!-- Naranja X -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="logo-banco">
-                                <img src="img/bancos/naranja-x-01.png" alt="icono Ticket" width="241p" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>Naranja X</h3>
-                                <p class="precio">$18.800</p>
-                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
-                    </div>
-
-                    <!-- La Nación -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="logo-banco">
-                                <img src="img/bancos/la-nacion-01.png" alt="icono Ticket" width="241p" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>La Nación</h3>
-                                <p class="precio">$18.800</p>
-                                <p class="impuestos">Precio sin impuestos nacionales: $14.361</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- ENTRADAS ESPECIALES -->
-            <section class="grupo-entradas">
-                <h2 class="subtitulo-categoria">ENTRADAS ESPECIALES</h2>
-                <div class="grid-tarjetas">
-
-                    <!-- Entrada Especial -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="icono-tipo-entrada">
-                                <img src="img/bancos/icono-ticket.png" alt="icono Ticket" width="241p" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>Entrada Especial</h3>
-                                <p class="precio">$15.000</p>
-                                <p class="impuestos">Precio sin impuestos nacionales:</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
-                    </div>
-
-                    <!-- Mayores de 60 años -->
-                    <div class="tarjeta-entrada">
-                        <div class="info-entrada">
-                            <div class="icono-tipo-entrada">
-                                <img src="img/bancos/icono-ticket.png" alt="icono Ticket" width="241p" height="180">
-                            </div>
-                            <div class="detalles-precio">
-                                <h3>Mayores de 60 años</h3>
-                                <p class="precio">$15.000</p>
-                                <p class="impuestos">Precio sin impuestos nacionales:</p>
-                            </div>
-                        </div>
-                        <div class="control-cantidad">
-                            <button class="btn-menos" type="button">-</button>
-                            <span class="cantidad">0</span>
-                            <button class="btn-mas" type="button">+</button>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- BOTONES DE ACCIÓN INFERIORES -->
-            <div class="contenedor-botones-accion">
-                <button class="btn-accion btn-volver" type="button"><a href="index.html">Volver</a></button>
-                <button class="btn-accion btn-seleccionar-butacas" type="button"><a href="#">Seleccionar butacas</a></button>
-            </div>
-
+                <button class="info-entrada" title="Información">i</button>
+            </article>
         </div>
+    </section>
+
+    <!-- ENTRADAS 50% OFF -->
+    <section class="grupo-entradas">
+        <h2>ENTRADAS 50% OFF</h2>
+        <div class="grilla-entradas">
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/american-express-01.png" alt="American Express" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>Amex</h3>
+                    <p class="precio">$9.400</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales: $7.175</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
+                    </div>
+                </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/pase-cultural-01.png" alt="Pase-Cultural" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>Pase Cultural</h3>
+                    <p class="precio">$9.400</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales: $7.175</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
+                    </div>
+                </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- PROMOCIONES 2X1 -->
+    <section class="grupo-entradas">
+        <h2>PROMOCIONES 2X1</h2>
+        <div class="grilla-entradas">
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/bbva-01.png" alt="bbva" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>BBVA</h3>
+                    <p class="precio">$18.800</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales: $14.361</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
+                    </div>
+                </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/personal-pay-01.png" alt="Personal-Pay" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>Personal Pay</h3>
+                    <p class="precio">$18.800</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales: $14.361</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
+                    </div>
+                </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/naranja-x-01.png" alt="Naranja-X" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>Naranja X</h3>
+                    <p class="precio">$18.800</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales: $14.361</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
+                    </div>
+                </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/la-nacion-01.png" alt="La-Nación" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>La Nación</h3>
+                    <p class="precio">$18.800</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales: $14.361</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
+                    </div>
+                </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- ENTRADAS ESPECIALES -->
+    <section class="grupo-entradas">
+        <h2>ENTRADAS ESPECIALES</h2>
+        <div class="grilla-entradas">
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/icono-ticket.png" alt="Entrada-especial" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>Entrada Especial</h3>
+                    <p class="precio">$15.000</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales:</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
+                    </div>
+                </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+            <article class="tarjeta-entrada">
+                <img src="img/bancos/icono-ticket.png" alt="Mayores" class="imagen-entrada">
+                <div class="datos-entrada">
+                    <h3>Mayores de 60 años</h3>
+                    <p class="precio">$15.000</p>
+                    <p class="precio-impuestos">Precio sin impuestos nacionales:</p>
+                    <div class="contador">
+                        <button class="restar">−</button>
+                        <span class="cantidad">0</span>
+                        <button class="sumar">+</button>
+                    </div>
+                </div>
+                <button class="info-entrada" title="Información">i</button>
+            </article>
+        </div>
+    </section>
+    <div class="botones-navegacion">
+        <a href="index.html" class="boton-entradas">VOLVER</a>
+        <a href="butacas.html" class="boton-entradas">SELECCIONAR BUTACAS</a>
+    </div>
     </main>
 
     <footer>
@@ -325,7 +262,5 @@
         </div>
 
     </footer>
-
 </body>
-
 </html>
