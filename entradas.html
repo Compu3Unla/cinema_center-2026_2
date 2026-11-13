@@ -7,43 +7,41 @@
     <title>Entradas</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/png" href="">
+    <link rel="icon" type="image/svg+xml" href="img/svg/logo.svg/logo_v3.svg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
 
 <body>
-<header>
-    <img src="img/svg/logo.svg/logo_v1.svg" alt="logo-cinemacenter" width="323" height="34">
-    
-    <!-- Checkbox oculto -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
-    
-    <!-- Botón Hamburguesa -->
-    <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </label>
+    <header>
+        <img src="img/svg/logo.svg/logo_v1.svg" alt="logo-cinemacenter" width="323" height="34">
 
-    <!-- Navegación -->
-    <nav class="nav-menu">
-        <!-- Cabecera interna que solo se ve cuando el menú está abierto en mobile -->
-        <div class="menu-mobile-header">
-            <a href="index.html" class="btn-home-mobile">
-                <img src="img/svg/logo.svg/logo_v1.svg" alt="Inicio" style="height: 25px;">
-            </a>
-            <label for="menu-toggle" class="menu-close" aria-label="Cerrar menú">✕</label>
-        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
 
-        <a href="index.html" class="boton-header">CARTELERA</a>
-        <a href="#pre-estrenos" class="boton-header">PRE ESTRENOS</a>
-        <a href="candy.html" class="boton-header">CANDY</a>
-        <button class="boton-header" popovertarget="popup-login">
-            <img src="img/svg/usuario.svg" alt="Iniciar sesión" width="15" height="15">
-        </button>
-    </nav>
-</header>
+        <!-- Botón para el menú Hamburguesa -->
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <nav class="nav-menu">
+            <div class="menu-mobile-header">
+                <a href="index.html" class="btn-home-mobile">
+                    <img src="img/svg/logo.svg/logo_v1.svg" alt="Inicio" style="height: 25px;">
+                </a>
+                <label for="menu-toggle" class="menu-close" aria-label="Cerrar menú">✕</label>
+            </div>
+
+            <a href="index.html" class="boton-header">CARTELERA</a>
+            <a href="#pre-estrenos" class="boton-header">PRE ESTRENOS</a>
+            <a href="candy.html" class="boton-header">CANDY</a>
+            <button class="boton-header" popovertarget="popup-login">
+                <img src="img/svg/usuario.svg" alt="Iniciar sesión" width="15" height="15">
+            </button>
+        </nav>
+    </header>
 
     <main>
 
