@@ -41,10 +41,10 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
     padding: 30px;
-
     background-color: var(--rojo);
+    position: relative;
+    /* Necesario para contener los elementos mobile */
 }
 
 header nav {
@@ -54,7 +54,6 @@ header nav {
     gap: 20px;
 }
 
-/* botón sin hover */
 .boton-header {
     display: inline-block;
     padding: 4px 20px;
@@ -69,15 +68,101 @@ header nav {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* botón con hover */
 .boton-header:hover {
     background-color: transparent;
     color: var(--blanco);
     border-color: var(--blanco);
 }
 
+.menu-toggle-checkbox,
+.menu-icon {
+    display: none;
+}
+
+.menu-toggle-checkbox,
+.menu-icon,
+.menu-mobile-header {
+    display: none;
+}
+
 /* -------------------------------------- */
-/* --- INICIO DE SESIÓN EMERGENTE --- */
+/* --------- VERSIÓN RESPONSIVE --------- */
+/* -------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Mostrar botón hamburguesa */
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .menu-icon .bar {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: var(--blanco);
+        border-radius: 2px;
+    }
+
+    /* Pantalla del menú hamburguesa*/
+    header nav.nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1A52BE;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 25px;
+        z-index: 2000;
+        padding: 130px 30px 30px 30px;
+        box-sizing: border-box;
+    }
+
+    .menu-toggle-checkbox:checked~.nav-menu {
+        display: flex;
+    }
+
+    .menu-mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        background-color: var(--rojo);
+        padding: 22px 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+    }
+
+    /* Botón de cierre 'X' */
+    .menu-close {
+        display: block;
+        color: var(--blanco);
+        font-size: 30px;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+
+    header nav.nav-menu .boton-header {
+        display: inline-block;
+        text-align: left;
+        font-size: 20px;
+        padding: 12px 35px;
+    }
+}
+
+/* -------------------------------------- */
+/* --- INICIO DE SESIÓN EMERGENTE ------- */
 /* -------------------------------------- */
 
 .popup-login {
